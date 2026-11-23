@@ -1,0 +1,76 @@
+<!-- Page 4: Chapter 2 -->
+<section class="page" data-folio="2 Controls">
+  <div class="body">
+    <div class="chapter-head" id="k2" data-toc="Handlebar, display, card reader, status LED">
+      <div class="chapter-label">Chapter 2</div>
+      <h1>Controls</h1>
+    </div>
+    <p class="lead">Everything needed to ride is on the handlebar. While parked, some controls have extra functions.</p>
+    <figure id="abb-lenker">
+      {{svg:ref-lenker}}
+      <figcaption><span class="fn">{{fig:abb-lenker}}</span>Handlebar from the rider's view, switches highlighted in color.</figcaption>
+    </figure>
+    <ol class="legend">
+      <li><span class="num">1</span><span>Left brake lever, rear brake</span></li>
+      <li><span class="num">2</span><span>Blinker switch</span></li>
+      <li><span class="num">3</span><span>{{icon:seat-button}} Seatbox switch</span></li>
+      <li><span class="num">4</span><span>Display with card reader ({{p:k2b}})</span></li>
+      <li><span class="num">5</span><span>Bag hook</span></li>
+      <li><span class="num">6</span><span>Horn</span></li>
+      <li><span class="num">7</span><span>Throttle</span></li>
+      <li><span class="num">8</span><span>Right brake lever, front brake</span></li>
+      <li><span class="num">9</span><span>Mirrors</span></li>
+    </ol>
+    <h2>Handlebar functions</h2>
+    <table class="compact">
+      <thead><tr><th style="width:27%">Control</th><th style="width:33%">In drive mode</th><th>In park mode</th></tr></thead>
+      <tbody>
+        <tr><td><span class="num">1</span> Left lever</td><td class="plain">rear brake</td><td class="plain">two short pulls: open menu ({{p:menue}})</td></tr>
+        <tr><td><span class="num">8</span> Right lever</td><td class="plain">front brake</td><td class="plain">in menu: select</td></tr>
+        <tr><td>Both levers</td><td class="plain">brake</td><td class="plain">hold: version box; longer: hibernation ({{p:winterschlaf}})</td></tr>
+        <tr><td><span class="num">2</span> Blinker</td><td class="plain">signal left or right</td><td class="plain">signal left or right</td></tr>
+        <tr><td><span class="num">3</span> {{icon:seat-button}} Seatbox</td><td class="plain">hold: shortcut menu; double tap: hazards ({{p:schnellmenue}})</td><td class="plain">press: open seatbox</td></tr>
+        <tr><td><span class="num">6</span> Horn</td><td class="plain">honk</td><td class="plain">honk</td></tr>
+        <tr><td><span class="num">7</span> Throttle</td><td class="plain">accelerate</td><td class="plain">no drive</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+<!-- Page 5: Display, card reader, keys -->
+<section class="page" data-folio="2 Controls">
+  <div class="body">
+    <div class="cont-head">Chapter 2 &nbsp;Controls</div>
+    <h2 class="first" id="k2b">Display, card reader and status LED</h2>
+    <div class="cols c5-7">
+      <figure id="abb-display">
+        {{svg:dbc}}
+        <figcaption><span class="fn">{{fig:abb-display}}</span>Front view of the display in park mode. Screenshot with sample data.</figcaption>
+      </figure>
+      <div>
+        <ol class="legend one" style="margin-top:4mm">
+          <li><span class="num">1</span><span>Card reader<span class="sub">marking to the left of the screen</span></span></li>
+          <li><span class="num">2</span><span>Screen<span class="sub">{{p:k5}}</span></span></li>
+          <li><span class="num">3</span><span>Status LED<span class="sub">midway down the right bezel; ambient light sensor sits above it</span></span></li>
+        </ol>
+      </div>
+    </div>
+    <h2>Your keys</h2>
+    <p>Hold an enrolled NFC keycard against the card symbol for about one second. You can also enroll the card from your starter kit.</p>
+    <p>Android NFC phone keys require an enabled app build ({{p:handy}}). Hold the enrolled, unlocked phone against the reader.</p>
+    <p>A teach-in card enrolls additional keys and never unlocks the scooter itself. Manage keys under [[Menu > Settings > Keycards]].</p>
+    <h2>Status LED signals</h2>
+    <table>
+      <thead><tr><th style="width:34%">LED</th><th>Meaning</th></tr></thead>
+      <tbody>
+        <tr><td><span class="led y"></span><span class="led g"></span> yellow, then briefly green</td><td class="plain">Key recognized. The scooter unlocks or locks.</td></tr>
+        <tr><td><span class="led r"></span> brief red</td><td class="plain">Key rejected. During enrollment: card is already saved.</td></tr>
+        <tr><td><span class="led y"></span> steady yellow</td><td class="plain">Teach-in mode active; blinkers stay lit continuously.</td></tr>
+        <tr><td>{{icon:led-armed}} slow red blink</td><td class="plain">Short pulse roughly every two seconds: alarm armed, if the armed indicator LED is enabled ({{p:alarm}}).</td></tr>
+        <tr><td>{{icon:led-blink}} blinking yellow</td><td class="plain">Scooter is waiting for a teach-in card, for example after a manual reinstall with no stored cards.</td></tr>
+      </tbody>
+    </table>
+    <div class="note">
+      <p>An enrolled keycard is all you need to ride. App, SIM card and cloud account are optional.</p>
+    </div>
+  </div>
+</section>

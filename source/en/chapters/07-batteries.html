@@ -1,0 +1,42 @@
+<section class="page" data-folio="7 Batteries, charging and hibernation"><div class="body">
+<div class="chapter-head" id="k7" data-toc="Battery swap, charging, backup batteries, hibernation"><div class="chapter-label">Chapter 7</div><h1>Batteries, charging and hibernation</h1></div>
+<p class="lead">Swapping batteries, charging, backup batteries and hibernation.</p>
+<h2 class="first">The battery slots</h2>
+<p>Under the seatbox sit a front and a rear battery slot. With factory wiring, only the battery in the front slot supplies power. The rear slot can carry a charged spare battery.</p>
+<div class="note"><span class="t">Front slot powers the scooter</span><p>Without additional wiring, a battery in the rear slot is a spare only. When the front battery runs low, stop and swap batteries.</p></div>
+<h2>Swapping batteries</h2>
+<ol class="seq"><li>Stop, lower the kickstand and open the seatbox with the handlebar switch.</li><li>Lift the discharged battery out of the front slot by its handle.</li><li>Place the charged battery from the rear slot into the front slot. Store the discharged battery in the rear slot.</li><li>Close the seatbox and wait for the scooter to detect and activate the inserted battery.</li></ol>
+<p>During a swap, the internal backup batteries keep the scooter powered on. You cannot ride without an active main battery; the display shows a notice while waiting for battery activation.</p>
+<div class="caution"><span class="t">Safety</span><p>Swap batteries only in park mode. Close the seatbox before riding.</p></div>
+</div></section>
+<section class="page" data-folio="7 Batteries, charging and hibernation"><div class="body">
+<div class="cont-head">Chapter 7 &nbsp;Batteries, charging and hibernation</div><h2 class="first" id="laden">Charging and battery indicators</h2>
+<p>Charge main batteries outside the scooter in their external charging station.</p>
+<ol class="seq"><li>In park mode, open the seatbox and lift the battery out by its handle.</li><li>Place it in the external charging station to charge.</li><li>Return the charged battery to the front slot and close the seatbox.</li></ol>
+<p>Follow the charging station's instructions while charging.</p>
+<h2>Battery display on the screen</h2>
+<p>The top left shows an indicator for each detected connected main battery. With factory wiring, this is normally one indicator.</p>
+<table><thead><tr><th style="width:36%">Indicator</th><th>Meaning</th></tr></thead><tbody>
+<tr><td>Normal text</td><td class="plain">Charge level of the detected battery</td></tr><tr><td>{{icon:turtle}} Orange, turtle</td><td class="plain">20% or below. Motor power is reduced.</td></tr><tr><td>Red</td><td class="plain">Below 10%. Recharge the battery.</td></tr><tr><td>{{icon:battery-fault}} Fault marker and B-code</td><td class="plain">The battery reports a fault. See {{p:b-codes}}.</td></tr></tbody></table>
+<p style="margin-top:3mm">You can display estimated range instead of percentage under [[Menu > Settings > Appearance > Status Bar]] in Battery Display.</p>
+<div class="note"><p>Estimated range depends on riding style, route, weather and battery condition.</p></div>
+</div></section>
+<section class="page" data-folio="7 Batteries, charging and hibernation"><div class="body">
+<div class="cont-head">Chapter 7 &nbsp;Batteries, charging and hibernation</div><h2 class="first" id="stuetz">Backup batteries and dual-battery mode</h2>
+<h3>Internal backup batteries</h3><p>Inside the scooter sit a 12V AUX battery and a CBB battery. They keep the scooter powered during battery swaps and while locked. When either gets low, the display shows a warning icon or banner.</p>
+<p>For longer storage, leave a charged main battery in the front slot so the backup batteries stay charged. They discharge slowly even during hibernation.</p>
+<h3>Two connected main batteries</h3><p>With suitable rear-slot wiring, both slots supply power in parallel. Switch the setting under [[Menu > Settings > Vehicle]] in Battery Mode.</p>
+<div class="caution"><span class="t">Caution</span><p>Enable Dual Battery only with compatible wiring. A waiting second pack can also join while ready to drive: the scooter must stay stationary for at least five seconds with the throttle released, and pack voltages must be compatible based on recent readings.</p></div>
+<p>The scooter monitors the voltage difference and temporarily disconnects the rear slot if it is too large. The threshold is configurable and defaults to 1 V.</p>
+<h2>Consumption and energy</h2><p>Under [[Menu > Info > Consumption]], the scooter estimates net energy drawn from traction packs across ready-to-drive, parked and standby phases (a rough phase breakdown without per-load metering).</p>
+<p>Separately, motor-controller counters estimate consumed and recovered energy in kWh. Trip history and the trip counter track individual rides and daily distance ({{p:fahrtenbuch}}).</p>
+</div></section>
+<section class="page" data-folio="7 Batteries, charging and hibernation"><div class="body">
+<div class="cont-head">Chapter 7 &nbsp;Batteries, charging and hibernation</div><h2 class="first" id="winterschlaf-geplant">Scheduled hibernation</h2>
+<p>In hibernation, the scooter draws minimal power. You can set a single duration or a recurring schedule with automatic wake-up using stasis for unu over Bluetooth.</p>
+<h3>For a chosen duration</h3><ol class="seq"><li>Connect the app to the scooter and open the scooter controls.</li><li>Select "Hibernation" and pick a wake-up time or custom duration. By default, up to seven days is allowed.</li><li>Confirm. With a duration set, the scooter wakes automatically; choosing "Don't wake" keeps it in hibernation until woken manually.</li></ol>
+<h3>Recurring schedule</h3><ol class="seq"><li>In the connected app, open Power and Scheduled hibernation settings.</li><li>Choose the start time, repeat pattern and wake time, then enable the schedule.</li><li>Lock the scooter normally. Scheduled hibernation starts from standby.</li></ol>
+<p>The schedule is stored on the scooter, so no phone or SIM needs to stay connected. If the scooter is unlocked at the scheduled time, hibernation begins on the next entry to standby without shifting the wake time. If wake time has already passed, that occurrence is skipped.</p>
+<div class="note"><span class="t">The clock</span><p>A recurring schedule requires a synchronized clock; a single duration works without one. After complete power loss, sync the clock via GPS outdoors or from a phone. If started offline, the scooter retries syncing later. Once set, the schedule runs offline.</p></div>
+<h2>Storing longer and waking up</h2><p>Leave a charged main battery in the front slot and check the scooter every few weeks. Wake it early by holding both brake levers for about six seconds or connecting over paired Bluetooth. A keycard alone will not wake it.</p>
+</div></section>

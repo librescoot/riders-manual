@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-70 -14 488 342" class="ill ill-step" style="overflow:hidden">
+  <rect x="0" y="0" width="348" height="312" rx="28" fill="#141416" stroke="#2c2c3a" stroke-width="1.5"/>
+  <rect x="54" y="18" width="240" height="240" rx="2" fill="#000" stroke="#3a3a46" stroke-width="1"/>
+  <!-- Lichtsensor oberhalb der Mitte; Status-LED auf halber Gehäusehöhe. -->
+  <circle cx="321" cy="126" r="4" fill="#3a3a46"/>
+  <circle cx="321" cy="156" r="13" fill="#5deb32" fill-opacity=".35"/>
+  <circle cx="321" cy="156" r="5" fill="#5deb32"/>
+  <text x="174" y="292" text-anchor="middle" font-family="Abel, sans-serif" font-size="25.6" fill="#ffffff" fill-opacity=".5">librescoot</text>
+  <!-- Karte über dem Kartenleser links -->
+  <g transform="rotate(-12 27 156)">
+    <rect x="-58" y="104" width="150" height="96" rx="10" fill="#fff" stroke="#1d1d1b" stroke-width="3"/>
+    <g fill="none" stroke="#0b7285" stroke-width="3" stroke-linecap="round">
+      <circle cx="17" cy="152" r="3.6" fill="#0b7285"/>
+      <path d="M26 140 a17 17 0 0 1 0 24 M8 140 a17 17 0 0 0 0 24"/>
+      <path d="M35 131 a29 29 0 0 1 0 42 M-1 131 a29 29 0 0 0 0 42"/>
+    </g>
+  </g>
+</svg>

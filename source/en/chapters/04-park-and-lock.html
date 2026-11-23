@@ -1,0 +1,77 @@
+<!-- Page 8: Chapter 4 -->
+<section class="page" data-folio="4 Parking and locking">
+  <div class="body">
+    <div class="chapter-head" id="k4" data-toc="Parking, handlebar lock, states, alarm">
+      <div class="chapter-label">Chapter 4</div>
+      <h1>Parking and locking</h1>
+    </div>
+    <p class="lead">Park, lock the scooter and engage the handlebar lock.</p>
+    <figure id="abb-ab">
+      <div class="steps three">
+        <div class="step">
+          <div class="pic"><span class="num tag">1</span>{{svg:schritt-staender|reverse}}</div>
+          <h3>Lower kickstand</h3>
+          <p>Come to a stop and fold out the kickstand.</p>
+          <p class="result">Park mode: {{icon:parking}} on screen.</p>
+        </div>
+        <div class="step">
+          <div class="pic"><span class="num tag">2</span>{{svg:schritt-karte|ab}}</div>
+          <h3>Tap key</h3>
+          <p>Hold the key against the card symbol until the LED turns green.</p>
+          <p class="result">Standby: locked, display off.</p>
+        </div>
+        <div class="step">
+          <div class="pic"><span class="num tag">3</span>{{svg:schritt-lenker|ab}}</div>
+          <h3>Turn handlebar left</h3>
+          <p>Push the handlebar to the left stop within the window.</p>
+          <p class="result">The handlebar lock engages by motor.</p>
+        </div>
+      </div>
+      <figcaption><span class="fn">{{fig:abb-ab}}</span>Parking and locking.</figcaption>
+    </figure>
+    <figure id="abb-zeit" style="margin-top:3mm">
+      {{svg:zeitfenster}}
+      <figcaption><span class="fn">{{fig:abb-zeit}}</span>Window to engage the handlebar lock after locking.</figcaption>
+    </figure>
+    <h2>Check before walking away</h2>
+    <p>Gently turn the handlebar left and right. If it moves freely, the handlebar lock did not engage: unlock the scooter, lock it again, and push the handlebar left within the window. Even though the scooter enters standby on its own after about 15 minutes, lock it yourself and check the handlebar lock.</p>
+    <h2>Seatbox and alarm</h2>
+    <p>In park mode, the seatbox switch opens the seatbox. It holds a helmet and gives access to the batteries. The scooter will not enter drive mode while the seatbox is open.</p>
+    <p>When enabled, the alarm arms in standby. Leave the scooter undisturbed after locking. See {{p:alarm}} for details.</p>
+  </div>
+</section>
+<!-- Page 9: States -->
+<section class="page" data-folio="4 Parking and locking">
+  <div class="body">
+    <div class="cont-head">Chapter 4 &nbsp;Parking and locking</div>
+    <h2 class="first" id="zustaende">The four states of your scooter</h2>
+    <p>The state controls whether you can ride and how much power is used. Locking switches from park mode to standby; unlocking switches back.</p>
+    <figure id="abb-zustaende" style="margin:2mm 0 0">
+      {{svg:zustaende}}
+      <figcaption><span class="fn">{{fig:abb-zustaende}}</span>States and transitions. Dashed: manual hibernation from park mode.</figcaption>
+    </figure>
+    <h2 id="winterschlaf">Manual hibernation</h2>
+    <ol class="seq tight">
+      <li>Scooter in park mode, seatbox closed.</li>
+      <li>Pull and hold both brake levers. After 3 s the version box appears; keep holding.</li>
+      <li>After 15 s total, the display prompts to confirm. Tap a keycard or hold 15 s longer.</li>
+      <li>Three seconds later, the scooter enters hibernation.</li>
+    </ol>
+    <p>Releasing before the prompt cancels; afterwards, the seatbox switch cancels. Wake by holding both brake levers about 6 s or connecting over paired Bluetooth. A keycard alone will not wake it.</p>
+    <p class="small muted">Backup batteries still discharge slowly in hibernation. Leave a charged main battery in front and check every few weeks.</p>
+    <h2>Hop-on / hop-off for short stops</h2>
+    <p>Under [[Menu > Settings > Vehicle > Hop On / Hop Off…]], set a combo on the brakes, horn and seatbox switch. The scooter stays on with a lock screen until you re-enter it. Lock with your key when leaving it unattended.</p>
+  </div>
+</section>
+<!-- Chapter 4, Page 3 -->
+<section class="page" data-folio="4 Parking and locking">
+  <div class="body">
+    <div class="cont-head">Chapter 4 &nbsp;Parking and locking</div>
+    <h2 class="first" id="alarm">The built-in alarm</h2>
+    <p>The alarm monitors the parked scooter. Its local response works without a SIM card or cloud account.</p>
+    <h2>Setup and use</h2><p>Open [[Menu > Settings > Vehicle > Alarm]] and turn on "Enable on Lock". You can also set whether the horn sounds and how long the response lasts.</p><ol class="seq"><li>Lock the scooter as usual. Once it reaches standby, the alarm arms automatically.</li><li>Unlocking disarms it and stops an active alarm. Horn and hazard lights switch off, with automatic retries if switching off fails.</li></ol>
+    <h2>Red armed indicator blink</h2><p>{{icon:led-armed}} "Armed indicator LED" is off by default and controls only the status LED blink. When armed in standby, the LED gives a brief dim red pulse roughly every two seconds. Keycard feedback takes priority. During hibernation this works only while LED power is available.</p>
+    <h2>Triggers and response</h2><p>By default, movement, handlebar controls (brake levers, horn, seatbox switch) and unauthorized seatbox opening trigger the alarm. Extra triggers for the handlebar lock and handlebar position are off by default.</p><p>When triggered, the hazard lights flash and the horn sounds unless turned off via "Honk on Trigger". Both the alarm and motion sensor also recognize scheduled hibernation. Remote alerts require cellular connectivity and a cloud service.</p>
+    <h2>After an alarm</h2><p>Inspect the scooter, steering and seatbox before riding. The latest trigger source and timestamp remain stored.</p><div class="note"><p>In the web interface, "Stop" silences a sounding alarm; it re-arms after five minutes. "Disarm" suppresses it longer, up to eight hours.</p></div>
+  </div>
+</section>

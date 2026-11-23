@@ -1,0 +1,76 @@
+<!-- Seite 4: Kapitel 2 -->
+<section class="page" data-folio="2 Bedienelemente">
+  <div class="body">
+    <div class="chapter-head" id="k2" data-toc="Lenker, Display, Kartenleser, Status-LED">
+      <div class="chapter-label">Kapitel 2</div>
+      <h1>Bedienelemente</h1>
+    </div>
+    <p class="lead">Alles für die Fahrt sitzt am Lenker. Im Stand haben einige Elemente zusätzliche Aufgaben.</p>
+    <figure id="abb-lenker">
+      {{svg:ref-lenker}}
+      <figcaption><span class="fn">{{fig:abb-lenker}}</span>Lenker aus deiner Sicht, Schalter farbig hervorgehoben.</figcaption>
+    </figure>
+    <ol class="legend">
+      <li><span class="num">1</span><span>Linker Bremshebel, Hinterradbremse</span></li>
+      <li><span class="num">2</span><span>Blinkerschalter</span></li>
+      <li><span class="num">3</span><span>{{icon:seat-button}} Sitzbank-Schalter</span></li>
+      <li><span class="num">4</span><span>Display mit Kartenleser ({{p:k2b}})</span></li>
+      <li><span class="num">5</span><span>Gepäckhaken</span></li>
+      <li><span class="num">6</span><span>Hupe</span></li>
+      <li><span class="num">7</span><span>Gasgriff</span></li>
+      <li><span class="num">8</span><span>Rechter Bremshebel, Vorderradbremse</span></li>
+      <li><span class="num">9</span><span>Spiegel</span></li>
+    </ol>
+    <h2>Funktionen am Lenker</h2>
+    <table class="compact">
+      <thead><tr><th style="width:27%">Element</th><th style="width:33%">Im Fahrmodus</th><th>Im Parkmodus</th></tr></thead>
+      <tbody>
+        <tr><td><span class="num">1</span> Linker Hebel</td><td class="plain">bremst hinten</td><td class="plain">zweimal kurz ziehen: Menü öffnen ({{p:menue}})</td></tr>
+        <tr><td><span class="num">8</span> Rechter Hebel</td><td class="plain">bremst vorn</td><td class="plain">im Menü: auswählen</td></tr>
+        <tr><td>Beide Hebel</td><td class="plain">bremsen</td><td class="plain">halten: Versionsbox, länger Winterschlaf ({{p:winterschlaf}})</td></tr>
+        <tr><td><span class="num">2</span> Blinker</td><td class="plain">links oder rechts blinken</td><td class="plain">links oder rechts blinken</td></tr>
+        <tr><td><span class="num">3</span> {{icon:seat-button}} Sitzbank</td><td class="plain">halten: Schnellmenü, zweimal kurz: Warnblinker ({{p:schnellmenue}})</td><td class="plain">drücken: Sitzbank entriegeln</td></tr>
+        <tr><td><span class="num">6</span> Hupe</td><td class="plain">hupen</td><td class="plain">hupen</td></tr>
+        <tr><td><span class="num">7</span> Gasgriff</td><td class="plain">Gas geben</td><td class="plain">kein Antrieb</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+<!-- Seite 5: Display, Kartenleser, Schlüssel -->
+<section class="page" data-folio="2 Bedienelemente">
+  <div class="body">
+    <div class="cont-head">Kapitel 2 &nbsp;Bedienelemente</div>
+    <h2 class="first" id="k2b">Display, Kartenleser und Status-LED</h2>
+    <div class="cols c5-7">
+      <figure id="abb-display">
+        {{svg:dbc}}
+        <figcaption><span class="fn">{{fig:abb-display}}</span>Display von vorn mit Bildschirm im Parkmodus. Bildschirmfoto mit Beispieldaten.</figcaption>
+      </figure>
+      <div>
+        <ol class="legend one" style="margin-top:4mm">
+          <li><span class="num">1</span><span>Kartenleser<span class="sub">Markierung links neben dem Bildschirm</span></span></li>
+          <li><span class="num">2</span><span>Bildschirm<span class="sub">{{p:k5}}</span></span></li>
+          <li><span class="num">3</span><span>Status-LED<span class="sub">rechts auf halber Gehäusehöhe; darüber liegt der Lichtsensor</span></span></li>
+        </ol>
+      </div>
+    </div>
+    <h2>Deine Schlüssel</h2>
+    <p>Halte eine angelernte NFC-Schlüsselkarte etwa eine Sekunde auf das Karten-Symbol. Auch die Karte aus deiner Starterkit-Box kannst du anlernen.</p>
+    <p>Android-NFC-Schlüssel brauchen einen freigeschalteten App-Build ({{p:handy}}). Halte das angelernte, entsperrte Handy an den Leser.</p>
+    <p>Eine Anlernkarte speichert weitere Schlüssel und entsperrt den Roller selbst nicht. Verwaltung: [[Menü > Einstellungen > Schlüsselkarten]].</p>
+    <h2>Signale der Status-LED</h2>
+    <table>
+      <thead><tr><th style="width:34%">LED</th><th>Bedeutung</th></tr></thead>
+      <tbody>
+        <tr><td><span class="led y"></span><span class="led g"></span> gelb, dann kurz grün</td><td class="plain">Schlüssel erkannt. Der Roller wird entsperrt oder gesperrt.</td></tr>
+        <tr><td><span class="led r"></span> kurz rot</td><td class="plain">Schlüssel nicht freigegeben. Beim Anlernen: Karte ist schon gespeichert.</td></tr>
+        <tr><td><span class="led y"></span> bleibt gelb</td><td class="plain">Lernmodus läuft, die Blinker leuchten dauerhaft.</td></tr>
+        <tr><td>{{icon:led-armed}} blinkt langsam rot</td><td class="plain">Kurzer Puls etwa alle zwei Sekunden: Alarm scharf, falls die LED-Anzeige eingeschaltet ist ({{p:alarm}}).</td></tr>
+        <tr><td>{{icon:led-blink}} blinkt gelb</td><td class="plain">Der Roller wartet auf eine Anlernkarte, etwa nach einer manuellen Neuinstallation ohne Karten.</td></tr>
+      </tbody>
+    </table>
+    <div class="note">
+      <p>Zum Fahren genügt eine angelernte Schlüsselkarte. App, SIM-Karte und Cloud-Konto sind optional.</p>
+    </div>
+  </div>
+</section>

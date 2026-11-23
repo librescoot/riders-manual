@@ -1,0 +1,11 @@
+/dist/
+/output/
+/tmp/
+.venv/
+__pycache__/
+*.py[cod]
+*.local.*
+.beans/
+CLAUDE.md
+AGENTS.md
+session*.jsonl

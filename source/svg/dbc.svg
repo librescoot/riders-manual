@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-44 -34 436 380" class="ill ill-dbc" data-quelle="Rahmen nach .dbc-bezel der Librescoot-Website">
+  <!-- Maße wie .dbc-bezel: 18 | 18 | 18 | 240 | 18 | 18 | 18, Zeilen 18 | 240 | 54 -->
+  <rect x="0" y="0" width="348" height="312" rx="28" fill="#141416" stroke="#2c2c3a" stroke-width="1.5"/>
+  <image href="assets/img/cluster-parked.png" x="54" y="18" width="240" height="240"/>
+  <rect x="54" y="18" width="240" height="240" rx="2" fill="none" stroke="#3a3a46" stroke-width="1"/>
+  <rect x="20" y="149" width="14" height="14" rx="4" fill="none" stroke="#ffffff" stroke-opacity=".45" stroke-width="2"/>
+  <!-- Lichtsensor oberhalb der Mitte; Status-LED auf halber Gehäusehöhe. -->
+  <circle cx="321" cy="126" r="4" fill="#3a3a46"/>
+  <circle cx="321" cy="156" r="4" fill="#3a3a46"/>
+  <text x="174" y="292" text-anchor="middle" font-family="Abel, sans-serif" font-size="25.6" fill="#ffffff" fill-opacity=".5">librescoot</text>
+</svg>

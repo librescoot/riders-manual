@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 190" class="ill ill-timeline">
+  <g font-family="Inter, sans-serif" fill="#1d1d1b">
+    <circle cx="40" cy="88" r="22" fill="#0b7285"/>
+    <text x="40" y="96" font-size="24" font-weight="700" fill="#fff" text-anchor="middle">0</text>
+    <rect x="62" y="74" width="900" height="28" fill="#e6f1f3" stroke="#0b7285" stroke-width="2"/>
+    <g stroke="#0b7285" stroke-width="1.4"><path d="M212 74v28M362 74v28M512 74v28M662 74v28M812 74v28"/></g>
+    <path d="M962 60 L962 116" stroke="#1d1d1b" stroke-width="3"/>
+    <text x="40" y="40" font-size="23" font-weight="600">Tap key, LED green</text>
+    <text x="962" y="40" font-size="23" font-weight="600" text-anchor="middle">about 60 s</text>
+    <text x="62" y="148" font-size="23" fill="#3f4548">Push the handlebar to the left stop during this window. The handlebar lock engages by motor.</text>
+  </g>
+</svg>

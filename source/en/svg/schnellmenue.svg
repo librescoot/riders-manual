@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 250" class="ill ill-timeline">
+  <g font-family="Inter, sans-serif" fill="#1d1d1b">
+    <!-- Timeline -->
+    <rect x="20" y="96" width="250" height="34" rx="6" fill="#1d1d1b"/>
+    <rect x="270" y="96" width="420" height="34" fill="#e6f1f3" stroke="#0b7285" stroke-width="2"/>
+    <g stroke="#0b7285" stroke-width="2"><path d="M410 96v34M550 96v34"/></g>
+    <rect x="690" y="96" width="330" height="34" fill="#fff" stroke="#1d1d1b" stroke-width="2" stroke-dasharray="8 5"/>
+    <circle cx="1060" cy="113" r="24" fill="#0b7285"/>
+    <g font-size="24" fill="#fff" font-weight="700" text-anchor="middle"><text x="145" y="121">hold</text></g>
+    <g font-size="22" fill="#0b7285" font-weight="600" text-anchor="middle">
+      <text x="340" y="121">View</text><text x="480" y="121">Theme</text><text x="620" y="121">...</text>
+    </g>
+    <g font-size="24" text-anchor="middle" font-weight="600"><text x="855" y="121">up to 3 s</text></g>
+    <!-- Top ticks -->
+    <g stroke="#1d1d1b" stroke-width="1.6"><path d="M20 86v-26M270 86v-26M690 86v-26M1060 86v-26"/></g>
+    <g font-size="23">
+      <text x="20" y="46">Hold switch</text>
+      <text x="270" y="46">menu appears after about 0.8 s</text>
+      <text x="690" y="46">release</text>
+      <text x="1060" y="46" text-anchor="middle">short press</text>
+    </g>
+    <g font-size="22" fill="#3f4548">
+      <text x="270" y="170">items cycle about every ¾ s</text>
+      <text x="690" y="170">selection stays marked</text>
+      <text x="1060" y="170" text-anchor="middle">run</text>
+      <text x="690" y="200">closes if not pressed</text>
+    </g>
+  </g>
+</svg>

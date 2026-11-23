@@ -1,0 +1,109 @@
+<!-- Page 10: Chapter 5 -->
+<section class="page" data-folio="5 The display">
+  <div class="body">
+    <div class="chapter-head" id="k5" data-toc="Screen areas, warning icons, trip values, menu, settings">
+      <div class="chapter-label">Chapter 5</div>
+      <h1>The display</h1>
+    </div>
+    <p class="lead">Screen areas, warning icons, trip values and menu.</p>
+    <div class="cols c7-5">
+      <figure id="abb-anatomie">
+        {{svg:anatomie}}
+        <figcaption><span class="fn">{{fig:abb-anatomie}}</span>Display in park mode, dark theme. Screenshot with sample data. Visible icons depend on hardware and settings.</figcaption>
+      </figure>
+      <ol class="legend one" style="margin-top:0">
+        <li><span class="num">1</span><span>Batteries<span class="sub">charge level per battery, or range. Beside it: backup batteries {{icon:cbb}} {{icon:aux}} or open seatbox {{icon:seat-open}}.</span></span></li>
+        <li><span class="num">2</span><span>Clock<span class="sub">can sync via GPS, even without a SIM</span></span></li>
+        <li><span class="num">3</span><span>Connections and sensors<span class="sub">such as temperature, update, GPS, Bluetooth, cloud, mobile network</span></span></li>
+        <li><span class="num">4</span><span>Speedometer<span class="sub">speed in km/h</span></span></li>
+        <li><span class="num">5</span><span>Energy gauge<span class="sub">power in kW</span></span></li>
+        <li><span class="num">6</span><span>Warning icons<span class="sub">{{p:warn}}</span></span></li>
+        <li><span class="num">7</span><span>Trip values<span class="sub">{{p:fahrtwerte}}</span></span></li>
+      </ol>
+    </div>
+    <p style="margin-top:3mm">Many top-right icons appear only when relevant, such as {{icon:cold}} in cold weather. Choose what stays visible under [[Menu > Settings > Appearance > Status Bar]].</p>
+    <h2>Light, dark or automatic</h2>
+    <p>Under [[Menu > Settings > Appearance > Theme]], select Light, Dark or Automatic based on ambient light. Backlight brightness is set separately in the same menu.</p>
+    <h2>Top-bar notifications</h2>
+    <p>Colored banners at the top usually dismiss themselves. Connection-problem notices stay visible until the fault is cleared.</p>
+    <table class="toast">
+      <tbody>
+        <tr><td><span class="led r"></span> Red</td><td class="plain">Error or critical warning</td><td><span class="led" style="background:#e8862a"></span> Orange</td><td class="plain">Warning</td></tr>
+        <tr><td><span class="led g"></span> Green</td><td class="plain">Success</td><td><span class="led" style="background:#2f73c9"></span> Blue</td><td class="plain">Information</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+<!-- Page 11: Warning icons, trip values, menu -->
+<section class="page" data-folio="5 The display">
+  <div class="body">
+    <div class="cont-head">Chapter 5 &nbsp;The display</div>
+    <h2 class="first" id="warn">Warning icons</h2>
+    <div class="cols c4-8">
+      <figure id="abb-warn">
+        {{svg:warnblinker}}
+        <figcaption><span class="fn">{{fig:abb-warn}}</span>Hazard lights on, scooter in park mode. Sample data.</figcaption>
+      </figure>
+      <table class="symbol-table">
+        <thead><tr><th style="width:38%">Icon</th><th>Meaning</th></tr></thead>
+        <tbody>
+          <tr><td>{{icon:parking}} red</td><td class="plain">Park mode, parking brake engaged</td></tr>
+          <tr><td>{{icon:hazards}} blinking</td><td class="plain">Hazard lights on</td></tr>
+          <tr><td>{{icon:engine}} yellow</td><td class="plain">Motor or controller fault, or interrupted board connection</td></tr>
+          <tr><td>{{icon:turtle}} orange</td><td class="plain">Battery at 20% or below, motor power reduced</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="small" style="margin-top:1.5mm">Warning icons appear at bottom left; blinker arrows {{icon:turn-left}} {{icon:turn-right}} appear at the top.</p>
+    <h2 id="fahrtwerte">Trip values in the bottom row</h2>
+    <table>
+      <tbody>
+        <tr><td style="width:22%"><span class="disp">DURATION</span></td><td class="plain">Time spent ready to drive, updated every second</td></tr>
+        <tr><td><span class="disp">Ø SPEED</span></td><td class="plain">Average speed, updated every second</td></tr>
+        <tr><td><span class="disp">TRIP</span></td><td class="plain">Trip distance</td></tr>
+        <tr><td><span class="disp">TOTAL</span></td><td class="plain">Total scooter odometer, cannot be reset</td></tr>
+      </tbody>
+    </table>
+    <p style="margin-top:2mm">The first three values survive a restart. Configure when they reset under [[Menu > Settings > Vehicle > Trip counter]]: every ride, every day, on battery swap or manually. Trip history tracks rides separately ({{p:fahrtenbuch}}).</p>
+    <h2 id="menue">Using the menu</h2>
+    <p>Operate the menu with both brake levers. Hints along the bottom edge show the active gestures.</p>
+    <table>
+      <thead><tr><th style="width:38%">Gesture</th><th>Action</th></tr></thead>
+      <tbody>
+        <tr><td>Left double tap</td><td class="plain">Open menu, park mode only</td></tr>
+        <tr><td>Left tap</td><td class="plain">Next item</td></tr>
+        <tr><td>Left hold</td><td class="plain">Back; hold 3 s to exit menu</td></tr>
+        <tr><td>Right tap</td><td class="plain">Select or confirm</td></tr>
+        <tr><td>Right hold</td><td class="plain">Row action, when offered</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+<!-- Chapter 5, Page 3 -->
+<section class="page" data-folio="5 The display">
+  <div class="body">
+    <div class="cont-head">Chapter 5 &nbsp;The display</div>
+    <h2 class="first" id="darstellung">Display settings</h2>
+    <p>Under [[Menu > Settings > Appearance]], choose how the cluster looks and what data it shows. Change settings in park mode.</p>
+    <table><thead><tr><th style="width:35%">Setting</th><th>Options</th></tr></thead><tbody><tr><td>Theme</td><td class="plain">Light, Dark, or Automatic based on ambient light.</td></tr><tr><td>Backlight</td><td class="plain">Automatic, or Low, Medium or High.</td></tr><tr><td>Power Display</td><td class="plain">Power (kW) or Current (A).</td></tr><tr><td>Blinkers</td><td class="plain">{{icon:turn-left}} {{icon:turn-right}} icon or Fullscreen Arrow.</td></tr><tr><td>Battery Display</td><td class="plain">Percentage, Range (km) or {{icon:battery}} Icons Only.</td></tr><tr><td>Clock</td><td class="plain">Time, Date + Time, Alternating or Never.</td></tr></tbody></table>
+    <h2>Status bar icons</h2><div class="symbol-key">
+      <div>{{icon:gps}} GPS fix</div><div>{{icon:bluetooth}} Bluetooth</div>
+      <div>{{icon:cloud}} Cloud</div><div>{{icon:internet}} Mobile network</div>
+      <div>{{icon:cbb}} CBB backup battery</div><div>{{icon:aux}} 12V backup battery</div>
+      <div>{{icon:cold}} Cold warning</div><div>{{icon:seat-open}} Seatbox open</div>
+    </div><p>For connections and backup batteries, choose when each icon appears. Temperature visibility can also be set. Connection icons are shown here in their connected state.</p><p>Change the display language under [[Menu > Settings > System > Language]].</p>
+    <div class="note"><p>Theme and backlight brightness are set independently.</p></div>
+  </div>
+</section>
+
+<!-- Chapter 5, Page 4 -->
+<section class="page" data-folio="5 The display">
+  <div class="body">
+    <div class="cont-head">Chapter 5 &nbsp;The display</div>
+    <h2 class="first" id="info">Info menu, version box and notices</h2>
+    <p>In park mode, [[Menu > Info]] covers Components, Connectivity, Batteries, Consumption and Maps, plus Faults, SMS, About &amp; Licenses and the "Doctor" diagnostic check ({{p:doctor}}).</p>
+    <h2>Quick version check</h2><p>In park mode, hold both brake levers together for about three seconds. The version box lists firmware versions for the main computer (MDB), display computer (DBC), Bluetooth module (nRF) and motor controller (ECU), plus backup battery values and the serial number. It stays visible for four seconds after release, or closes if you open the menu or leave park mode.</p><p>Detailed readings appear under [[Menu > Info > Components]]. When a fault is active, "Faults" also appears directly in the main menu.</p>
+    <h2>Reading and deleting SMS</h2><p>Open [[Menu > Info > SMS]] and select a message. Tap left to scroll down, hold right to scroll up, hold left to go back. Tap right to open the delete confirmation; "Cancel" is selected first.</p><p>Optional SMS forwarding is configured in the web interface under Settings (Advanced mode). It is off by default and carrier charges may apply.</p>
+    <h2>Notices and sound cues</h2><p>Multiple notices cycle automatically and long text scrolls. Critical notices remain visible during connection issues and updates.</p><p>With an amplifier connected, the cluster can play audio cues for blinkers, navigation and notices. On most scooters, the amplifier is disconnected.</p>
+  </div>
+</section>

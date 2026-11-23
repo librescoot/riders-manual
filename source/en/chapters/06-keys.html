@@ -1,0 +1,58 @@
+<!-- Chapter 6, Page 1 -->
+<section class="page" data-folio="6 Keys">
+  <div class="body">
+    <div class="chapter-head" id="k6" data-toc="Enrolling, managing, removing">
+      <div class="chapter-label">Chapter 6</div>
+      <h1>Keys: cards and Android phone</h1>
+    </div>
+    <p class="lead">Enroll a key before using it to lock or unlock the scooter.</p>
+    <div class="cols c5-7">
+      <figure id="abb-schluessel">
+        {{svg:schritt-karte|schluessel}}
+        <figcaption><span class="fn">{{fig:abb-schluessel}}</span>Hold the card against the marking to the left of the display.</figcaption>
+      </figure>
+      <div>
+        <h2 class="first">Unlock card and teach-in card</h2>
+        <p>An unlock card unlocks and locks the scooter. You can keep using the card from your starter kit once enrolled.</p>
+        <p>A teach-in card starts and ends teach-in mode for other cards; it never unlocks the scooter itself.</p>
+      </div>
+    </div>
+    <h2>Enrolling another unlock card</h2>
+    <p>Open the menu in park mode with two short pulls on the left brake lever. To add a card directly on the display:</p>
+    <ol class="seq">
+      <li>Open [[Menu > Settings > Keycards]] and select "Add unlock card or phone". The display also explains what to check when using a phone as a key.</li>
+      <li>Tap each new card at the reader one by one. If the scooter detects a random NFC ID, tap the same ID a second time to confirm. Already stored cards flash red and are rejected.</li>
+      <li>Select "Done" at the end. New unlock cards are saved only when you confirm Done.</li>
+    </ol>
+    <div class="note">
+      <span class="t">After a fresh install</span>
+      <p>In the recommended Installer, set up cards with "Start learning" and save with "Finish". A fresh install that wipes data removes previous cards, so enroll every card you want to use again.</p>
+    </div>
+    <p>You can also add a teach-in card under [[Menu > Settings > Keycards]]. See {{p:handy}} for enrolling other cards with it.</p>
+  </div>
+</section>
+
+<!-- Chapter 6, Page 2 -->
+<section class="page" data-folio="6 Keys">
+  <div class="body">
+    <div class="cont-head">Chapter 6 &nbsp;Keys: cards and Android phone</div>
+    <h2 class="first" id="handy">Using an Android phone as a key</h2>
+    <p>You need an Android phone with NFC and host card emulation (HCE) plus an app build with phone keys enabled. In the tested version of Librescoot Mobile, this option is hidden in release builds. NFC and the screen must be on, and the phone must be unlocked.</p>
+    <h3>Setting up with a teach-in card</h3>
+    <ol class="seq tight">
+      <li>Connect Librescoot Mobile over Bluetooth ({{p:bluetooth}}). In app settings, open "Keycards", expand "Use this Android phone as a key" and select "Set up / show phone key". Ensure "Provide NFC phone key" is on.</li>
+      <li>Tap the teach-in card at the reader to start teach-in mode.</li>
+      <li>Hold the unlocked phone against the reader, then tap the teach-in card again to save the key.</li>
+    </ol>
+    <p>After reinstalling the app, enroll the phone again and remove the old phone key from the scooter. Keep a working physical keycard as a backup.</p>
+    <h2>Adding cards with a teach-in card</h2>
+    <p>Tap the teach-in card at the reader. The blinkers stay lit and the LED stays yellow while teach-in mode is active. Tap each new unlock card one by one; the LED flashes green briefly and returns to yellow.</p>
+    <div class="caution">
+      <span class="t">Important</span>
+      <p>Tap the teach-in card once more when finished. New cards are saved only when you leave teach-in mode.</p>
+    </div>
+    <p>After a manual reinstall with no stored cards, the status LED blinks yellow {{icon:led-blink}}: the scooter waits for a teach-in card first. Hold one card against the reader for about a second, then enroll a second, different card for unlocking as above.</p>
+    <h2>Removing keys</h2>
+    <p>Under [[Menu > Settings > Keycards]], unlock cards, phones and teach-in cards appear in separate lists. The display asks for confirmation before removing the final unlock key.</p>
+  </div>
+</section>

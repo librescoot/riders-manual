@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 548" class="ill ill-states">
+  <defs>
+    <marker id="ah-z" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#1d1d1b"/>
+    </marker>
+    <marker id="ah-za" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#0b7285"/>
+    </marker>
+  </defs>
+  <g font-family="Inter, sans-serif" fill="#1d1d1b">
+    <g stroke="#1d1d1b" stroke-width="2.6">
+      <rect x="430" y="6" width="320" height="86" rx="12" fill="#fff"/>
+      <rect x="430" y="156" width="320" height="86" rx="12" fill="#e6f1f3"/>
+      <rect x="430" y="306" width="320" height="86" rx="12" fill="#fff"/>
+      <rect x="430" y="456" width="320" height="86" rx="12" fill="#f0f3f4"/>
+    </g>
+    <g font-size="33" font-weight="700" text-anchor="middle">
+      <text x="590" y="45">Fahrmodus</text>
+      <text x="590" y="195">Parkmodus</text>
+      <text x="590" y="345">Standby</text>
+      <text x="590" y="495">Winterschlaf</text>
+    </g>
+    <g font-size="25" text-anchor="middle" fill="#3f4548">
+      <text x="590" y="77">fahrbereit, Ständer oben</text>
+      <text x="590" y="227">entsperrt, Ständer unten</text>
+      <text x="590" y="377">gesperrt, Display aus</text>
+      <text x="590" y="527">fast ganz aus</text>
+    </g>
+    <g stroke="#1d1d1b" stroke-width="2.6" fill="none">
+      <path d="M700 94 L700 150" marker-end="url(#ah-z)"/>
+      <path d="M700 244 L700 300" marker-end="url(#ah-z)"/>
+      <path d="M700 394 L700 450" marker-end="url(#ah-z)"/>
+      <path d="M480 150 L480 98" marker-end="url(#ah-z)"/>
+      <path d="M480 300 L480 248" marker-end="url(#ah-z)"/>
+      <path d="M480 450 L480 398" marker-end="url(#ah-z)"/>
+    </g>
+    <path d="M752 199 L778 199 Q790 199 790 211 L790 487 Q790 499 778 499 L758 499" stroke="#0b7285" stroke-width="2.6" stroke-dasharray="9 6" fill="none" marker-end="url(#ah-za)"/>
+    <g font-size="27">
+      <text x="812" y="120">Seitenständer</text><text x="812" y="150">ausklappen</text>
+      <text x="812" y="270">Schlüssel auflegen</text><text x="812" y="300">oder 15 min warten</text>
+      <text x="812" y="420">von selbst nach</text><text x="812" y="450">Tagen im Standby</text>
+    </g>
+    <g font-size="27" fill="#0b7285" font-weight="650">
+      <text x="812" y="344">von Hand: beide</text><text x="812" y="374">Bremshebel halten</text>
+    </g>
+    <g font-size="27" text-anchor="end">
+      <text x="458" y="120">Seitenständer</text><text x="458" y="150">einklappen</text>
+      <text x="458" y="270">Schlüssel</text><text x="458" y="300">auflegen</text>
+      <text x="458" y="420">aufwecken: beide</text><text x="458" y="450">Bremshebel 6 s halten</text>
+    </g>
+  </g>
+</svg>

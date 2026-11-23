@@ -1,0 +1,22 @@
+{
+  "lang": "en",
+  "title": "Librescoot Rider's Manual 1.4.3",
+  "sample_title": "Librescoot Rider's Manual 1.4.3, Sample",
+  "pdf_name": "librescoot-riders-manual-en.pdf",
+  "sample_pdf_name": "librescoot-riders-manual-en-sample.pdf",
+  "page_prefix": "p.",
+  "fig_prefix": "Fig.",
+  "chapter_prefix": "Chapter",
+  "images": {
+    "librescoot-logotype.svg": "inputs/code/scootui-qt/assets/icons/librescoot-logotype.svg",
+    "footwell-closed.jpg": "inputs/website/images/install/lsi-unu_scooter_footwell_closed.jpg",
+    "footwell-open.jpg": "inputs/website/images/install/lsi-unu_scooter_footwell_open.jpg",
+    "cluster-parked.png": "inputs/screenshots/cluster-parked-dark-en.png",
+    "cluster-driving.png": "inputs/website/images/handbook/cluster-driving-dark-en.png",
+    "cluster-hazards.png": "inputs/website/images/handbook/cluster-hazards-dark-en.png",
+    "map-route.png": "inputs/website/images/handbook/map-route-light-en.png",
+    "route-overview.png": "inputs/website/images/news/librescoot-1-4-route-en.png",
+    "trip-history.png": "inputs/screenshots/trip-history-1.4.3-en.png",
+    "doctor.png": "inputs/screenshots/doctor-1.4.3-en.png"
+  }
+}

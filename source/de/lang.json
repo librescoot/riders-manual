@@ -1,0 +1,27 @@
+{
+  "lang": "de",
+  "title": "Librescoot Fahrerhandbuch 1.4.3",
+  "sample_title": "Librescoot Fahrerhandbuch 1.4.3, Musterheft",
+  "pdf_name": "librescoot-riders-manual-de.pdf",
+  "sample_pdf_name": "librescoot-riders-manual-de-sample.pdf",
+  "page_prefix": "S.",
+  "fig_prefix": "Abb.",
+  "chapter_prefix": "Kapitel",
+  "images": {
+    "librescoot-logotype.svg": "inputs/code/scootui-qt/assets/icons/librescoot-logotype.svg",
+    "footwell-closed.jpg": "inputs/website/images/install/lsi-unu_scooter_footwell_closed.jpg",
+    "footwell-open.jpg": "inputs/website/images/install/lsi-unu_scooter_footwell_open.jpg",
+    "cluster-parked.png": "inputs/website/images/handbook/cluster-parked-dark-de.png",
+    "cluster-driving-dark-de.png": "inputs/website/images/handbook/cluster-driving-dark-de.png",
+    "cluster-driving.png": "inputs/website/images/handbook/cluster-driving-dark-de.png",
+    "cluster-hazards.png": "inputs/website/images/handbook/cluster-hazards-dark-de.png",
+    "map-route-light-de.png": "inputs/website/images/handbook/map-route-light-de.png",
+    "map-route.png": "inputs/website/images/handbook/map-route-light-de.png",
+    "librescoot-1-4-route-de.png": "inputs/website/images/news/librescoot-1-4-route-de.png",
+    "route-overview.png": "inputs/website/images/news/librescoot-1-4-route-de.png",
+    "fahrtenbuch-1.4.3-de.png": "inputs/screenshots/fahrtenbuch-1.4.3-de.png",
+    "trip-history.png": "inputs/screenshots/fahrtenbuch-1.4.3-de.png",
+    "doctor-1.4.3-de.png": "inputs/screenshots/doctor-1.4.3-de.png",
+    "doctor.png": "inputs/screenshots/doctor-1.4.3-de.png"
+  }
+}

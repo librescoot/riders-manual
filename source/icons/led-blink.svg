@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="inline-icon led-blink" role="img" aria-label="Status-LED blinkt gelb">
+  <g stroke="#9b6300" stroke-width="1.6" stroke-linecap="round">
+    <path d="M16 2v4 M16 26v4 M2 16h4 M26 16h4 M6 6l3 3 M23 23l3 3 M6 26l3-3 M23 9l3-3"/>
+    <circle cx="16" cy="16" r="8" fill="#ffad12"/>
+  </g>
+</svg>

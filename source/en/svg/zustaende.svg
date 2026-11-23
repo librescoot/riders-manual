@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 548" class="ill ill-states">
+  <defs>
+    <marker id="ah-z" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#1d1d1b"/>
+    </marker>
+    <marker id="ah-za" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#0b7285"/>
+    </marker>
+  </defs>
+  <g font-family="Inter, sans-serif" fill="#1d1d1b">
+    <g stroke="#1d1d1b" stroke-width="2.6">
+      <rect x="430" y="6" width="320" height="86" rx="12" fill="#fff"/>
+      <rect x="430" y="156" width="320" height="86" rx="12" fill="#e6f1f3"/>
+      <rect x="430" y="306" width="320" height="86" rx="12" fill="#fff"/>
+      <rect x="430" y="456" width="320" height="86" rx="12" fill="#f0f3f4"/>
+    </g>
+    <g font-size="33" font-weight="700" text-anchor="middle">
+      <text x="590" y="45">Drive mode</text>
+      <text x="590" y="195">Park mode</text>
+      <text x="590" y="345">Standby</text>
+      <text x="590" y="495">Hibernation</text>
+    </g>
+    <g font-size="25" text-anchor="middle" fill="#3f4548">
+      <text x="590" y="77">ready to drive, stand up</text>
+      <text x="590" y="227">unlocked, stand down</text>
+      <text x="590" y="377">locked, display off</text>
+      <text x="590" y="527">almost fully off</text>
+    </g>
+    <g stroke="#1d1d1b" stroke-width="2.6" fill="none">
+      <path d="M700 94 L700 150" marker-end="url(#ah-z)"/>
+      <path d="M700 244 L700 300" marker-end="url(#ah-z)"/>
+      <path d="M700 394 L700 450" marker-end="url(#ah-z)"/>
+      <path d="M480 150 L480 98" marker-end="url(#ah-z)"/>
+      <path d="M480 300 L480 248" marker-end="url(#ah-z)"/>
+      <path d="M480 450 L480 398" marker-end="url(#ah-z)"/>
+    </g>
+    <path d="M752 199 L778 199 Q790 199 790 211 L790 487 Q790 499 778 499 L758 499" stroke="#0b7285" stroke-width="2.6" stroke-dasharray="9 6" fill="none" marker-end="url(#ah-za)"/>
+    <g font-size="27">
+      <text x="812" y="120">lower</text><text x="812" y="150">kickstand</text>
+      <text x="812" y="270">tap key or</text><text x="812" y="300">wait 15 min</text>
+      <text x="812" y="420">automatically after</text><text x="812" y="450">days in standby</text>
+    </g>
+    <g font-size="27" fill="#0b7285" font-weight="650">
+      <text x="812" y="344">manual: hold both</text><text x="812" y="374">brake levers</text>
+    </g>
+    <g font-size="27" text-anchor="end">
+      <text x="458" y="120">raise</text><text x="458" y="150">kickstand</text>
+      <text x="458" y="270">tap key</text><text x="458" y="300">at reader</text>
+      <text x="458" y="420">wake: hold both</text><text x="458" y="450">brake levers 6 s</text>
+    </g>
+  </g>
+</svg>

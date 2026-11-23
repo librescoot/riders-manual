@@ -1,0 +1,55 @@
+<section class="page" data-folio="10 Troubleshooting"><div class="body"><div class="chapter-head" id="k10" data-toc="Fault codes, Doctor, emergency start, help"><div class="chapter-label">Chapter 10</div><h1>Troubleshooting</h1></div><p class="lead">First checks for faults, error codes, diagnostics and emergency start.</p>
+<h2>The scooter does not respond</h2><ol class="seq"><li>Hold both brake levers for about six seconds. If the scooter was in hibernation, it wakes up and the keycard works normally afterwards.</li><li>Check that a charged main battery is seated in the front slot.</li><li>If that fails, contact a workshop with unu experience or ask in the Librescoot community.</li></ol><p>A deeply discharged AUX battery can prevent the scooter from activating the main battery. See {{p:k2b}} for keys and {{p:k3}} for the handlebar lock.</p>
+<h2>Common notices</h2><table><thead><tr><th style="width:43%">Notice</th><th>Action</th></tr></thead><tbody><tr><td>USB connection interrupted</td><td class="plain">Internal link to the main computer was lost. A full power cycle via hibernation and wake-up can clear it.</td></tr><tr><td>System connection lost</td><td class="plain">Restart the scooter. If the notice returns, seek help.</td></tr><tr><td>Handlebar locked</td><td class="plain">Turn the handlebar all the way left to release the handlebar lock.</td></tr><tr><td>CBB or 12V low</td><td class="plain">Insert a charged main battery in the front slot and leave it in so the backup batteries can charge.</td></tr><tr><td>Low temperature</td><td class="plain">Power may be reduced until the battery warms up.</td></tr></tbody></table>
+</div></section>
+<section class="page" data-folio="10 Troubleshooting"><div class="body"><div class="cont-head">Chapter 10 &nbsp;Troubleshooting</div><h2 class="first" id="b-codes">Battery fault codes (B)</h2><p>B-codes come from the main battery. The banner shows code and description. Red banners indicate critical faults.</p>
+<table class="compact"><thead><tr><th style="width:13%">Code</th><th>Meaning</th><th style="width:16%">Color</th></tr></thead><tbody>
+<tr><td>B1</td><td class="plain">Over-temperature while charging</td><td class="plain">orange</td></tr>
+<tr><td>B2</td><td class="plain">Under-temperature while charging</td><td class="plain">orange</td></tr>
+<tr><td>B3</td><td class="plain">Over-temperature while discharging</td><td class="plain">orange</td></tr>
+<tr><td>B4</td><td class="plain">Under-temperature while discharging</td><td class="plain">orange</td></tr>
+<tr><td>B5</td><td class="plain">Signal wire broken</td><td class="plain">red</td></tr>
+<tr><td>B6</td><td class="plain">Critical over-temperature</td><td class="plain">red</td></tr>
+<tr><td>B7</td><td class="plain">Reserved</td><td class="plain">orange</td></tr>
+<tr><td>B8</td><td class="plain">MOSFET over-temperature</td><td class="plain">orange</td></tr>
+<tr><td>B9</td><td class="plain">Cell over-voltage</td><td class="plain">orange</td></tr>
+<tr><td>B10</td><td class="plain">Reserved</td><td class="plain">orange</td></tr>
+<tr><td>B11</td><td class="plain">Cell under-voltage</td><td class="plain">orange</td></tr>
+<tr><td>B12</td><td class="plain">Over-current while charging</td><td class="plain">orange</td></tr>
+<tr><td>B13</td><td class="plain">Over-current while discharging</td><td class="plain">orange</td></tr>
+<tr><td>B14</td><td class="plain">Short circuit</td><td class="plain">red</td></tr>
+<tr><td>B15</td><td class="plain">Reserved</td><td class="plain">orange</td></tr>
+<tr><td>B16</td><td class="plain">Reserved</td><td class="plain">orange</td></tr>
+<tr><td>B32</td><td class="plain">BMS not following commands</td><td class="plain">red</td></tr>
+<tr><td>B33</td><td class="plain">BMS has zero data</td><td class="plain">orange</td></tr>
+<tr><td>B34</td><td class="plain">BMS communication error</td><td class="plain">red</td></tr>
+<tr><td>B35</td><td class="plain">NFC reader error</td><td class="plain">red</td></tr>
+</tbody></table>
+<h2>Next steps</h2><p>For temperature faults, let the battery return to normal temperature. For B11, charge it fully once. For B32 to B35, remove it, wait one minute and reinsert it. If the fault remains, have the battery checked.</p><div class="caution"><span class="t">For B5, B9 and B12 to B14</span><p>Stop using the battery and do not attempt a test charge. Have it inspected, especially after a short circuit.</p></div>
+</div></section>
+<section class="page" data-folio="10 Troubleshooting"><div class="body"><div class="cont-head">Chapter 10 &nbsp;Troubleshooting</div><h2 class="first" id="e-codes">Motor and electronics faults (E)</h2><p>These E-codes come from the motor controller; E20 indicates lost controller communication. Note the code before asking for help.</p><table class="compact"><thead><tr><th style="width:13%">Code</th><th>Meaning</th><th style="width:16%">Color</th></tr></thead><tbody>
+<tr><td>E1</td><td class="plain">Battery over-voltage</td><td class="plain">red</td></tr>
+<tr><td>E2</td><td class="plain">Battery under-voltage</td><td class="plain">red</td></tr>
+<tr><td>E3</td><td class="plain">Motor short-circuit</td><td class="plain">red</td></tr>
+<tr><td>E4</td><td class="plain">Motor stalled</td><td class="plain">red</td></tr>
+<tr><td>E5</td><td class="plain">Hall sensor fault</td><td class="plain">red</td></tr>
+<tr><td>E6</td><td class="plain">MOSFET fault</td><td class="plain">red</td></tr>
+<tr><td>E7</td><td class="plain">Motor open-circuit</td><td class="plain">red</td></tr>
+<tr><td>E10</td><td class="plain">Self-check error</td><td class="plain">red</td></tr>
+<tr><td>E11</td><td class="plain">Controller over-temperature</td><td class="plain">red</td></tr>
+<tr><td>E12</td><td class="plain">Throttle fault</td><td class="plain">red</td></tr>
+<tr><td>E13</td><td class="plain">Motor over-temperature</td><td class="plain">red</td></tr>
+<tr><td>E14</td><td class="plain">Throttle held at power-up</td><td class="plain">orange</td></tr>
+<tr><td>E16</td><td class="plain">Internal 15V fault</td><td class="plain">red</td></tr>
+<tr><td>E20</td><td class="plain">ECU communication lost</td><td class="plain">red</td></tr>
+</tbody></table>
+<h2>Next steps</h2><p>For E14, release the throttle completely and wait briefly; the message clears automatically. If E12 returns repeatedly, have the throttle inspected.</p><p>For overheating, stop and let the motor or controller cool down. If the fault repeats, visit a workshop.</p><div class="caution"><span class="t">For motor or electronics faults</span><p>Park the scooter safely. Motor, sensor and wiring faults usually require workshop service.</p></div>
+</div></section>
+<section class="page" data-folio="10 Troubleshooting"><div class="body"><div class="cont-head">Chapter 10 &nbsp;Troubleshooting</div><h2 class="first" id="doctor">Doctor: system check</h2><p>In park mode, open [[Menu > Info > Doctor]]. It reads diagnostics separately from the main computer (MDB) and display (DBC): Services, Board connection, Kernel, Updates, Faults and Storage. It changes no settings.</p>
+<div class="cols c5-7"><figure id="abb-doctor"><img class="shot" src="assets/img/doctor.png" alt="Doctor diagnostic check showing results for display and main computer"><figcaption><span class="fn">{{fig:abb-doctor}}</span>Doctor with simulated diagnostic results.</figcaption></figure><div><p>Tap left to scroll down, hold right to scroll up. Once finished, tap right for "Check again" or hold left to go back.</p><p>"Not checked" means that area could not be evaluated. Each run stops after at most 40 seconds or when leaving the page or park mode.</p></div></div>
+<h2>Fault history</h2><p>[[Menu > Info > Faults]] lists active and cleared entries with source, code, timestamps and count. Cleared entries remain in the log.</p>
+</div></section>
+<section class="page" data-folio="10 Troubleshooting"><div class="body"><div class="cont-head">Chapter 10 &nbsp;Troubleshooting</div><h2 class="first" id="notstart">Emergency start without display</h2><p>If the display is dead or stuck on the connecting screen, you can still move the scooter a short distance.</p><ol class="seq"><li>Raise the kickstand.</li><li>Hold both brake levers and press the seatbox switch at the same time.</li></ol>
+<div class="caution"><span class="t">Short moves only</span><p>The scooter can accelerate immediately with no speedometer, warnings or error messages. Move it only a short distance on safe, level ground, then resolve the cause.</p></div>
+<h2>Getting further help</h2><p>Describe the issue accurately and note the fault code and installed versions. A photo of the display or Doctor report helps.</p><p>Ask questions on the <a href="https://discord.gg/BmY2P2T9j3">Librescoot community Discord</a>. Report reproducible software bugs in the <a href="https://github.com/librescoot/librescoot/issues">issue tracker</a>. For hardware faults, contact a workshop with unu experience.</p>
+</div></section>

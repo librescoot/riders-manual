@@ -1,0 +1,38 @@
+# Versions- und Quellenabgleich: Stable 1.4.3
+
+## Grundlage
+
+Die öffentlichen Tags wurden mit `git ls-remote --tags` überprüft und auf ihre Commit-Objekte aufgelöst. Die `stable.env`-Dateien liegen unverändert in `inputs/releases/`.
+
+| Release | Commit des Tags |
+| --- | --- |
+| [v1.4.0](https://github.com/librescoot/librescoot/tree/v1.4.0) | `924bb399d1bdb593e7cf81abe2dfc67a4eb18577` |
+| [v1.4.1](https://github.com/librescoot/librescoot/tree/v1.4.1) | `62c07b8678f23b4c74b3383034e14e14a15b265c` |
+| [v1.4.2](https://github.com/librescoot/librescoot/tree/v1.4.2) | `f70bf6fabae6128eff1879cef876144242f85fe9` |
+| [v1.4.3](https://github.com/librescoot/librescoot/blob/36b3fa18f8e6cf3305c03817df380171b51d03b5/stable.env) | `36b3fa18f8e6cf3305c03817df380171b51d03b5` |
+| [Installer v1.4.10](https://github.com/librescoot/installer/tree/v1.4.10) | `12fc3c0ca83b40c6b8861b16488d65149403f50f` |
+
+Gegenüber v1.4.0 änderte v1.4.1 zwei Pins, v1.4.2 gegenüber v1.4.1 elf und v1.4.3 gegenüber v1.4.2 22. Die vollständigen Werte stehen in den Manifesten. Die freigegebenen deutschen und englischen Release Notes wurden zusätzlich redaktionell abgeglichen; die nachstehenden öffentlichen Quellen belegen die aufgenommenen Aussagen.
+
+## Auswirkungen im Handbuch
+
+- Karten und Routen: Teilupdates nur bei passender Basis, sonst vollständiges Paket. Regionale Pakete und deren USB-Aktualisierung sind vom eingebauten Einzelkarten-Updater unterschieden; Routen müssen im aktiven Routing-Gebiet bleiben. Installer 1.4.10 verwendet für 1.4.3 den v2-Kartenfeed und installiert vollständige Karten- und Routingpakete. Quellen: [ScootUI v1.33.0, Regional offline packs](https://github.com/librescoot/scootui-qt/tree/9db25f53db2e8675e198fb28413693d956b6da6d#regional-offline-packs), [Installer README](https://github.com/librescoot/installer/blob/v1.4.10/README.md).
+- Uhr und Winterschlaf: GPS oder die vom Handy gesendete Uhrzeit können die Uhr stellen; bei fehlendem Netz versucht der Roller den Abgleich später erneut. Ein wiederkehrender Zeitplan benötigt eine gültige Uhr, funktioniert damit aber offline. Quelle: [pm-service v0.9.4](https://github.com/librescoot/pm-service/tree/df586d02237e653d4d77a6f31bf9540c54404609).
+- Akku: Das frühere pauschale Verbot der Zuschaltung in Fahrbereitschaft ist durch die Bedingungen Stillstand für mindestens fünf Sekunden, losgelassener Gasgriff, passende Spannungen und aktuelle Messwerte ersetzt. Nicht belegte Aussagen zum Akkuring wurden entfernt. Quelle: [battery-service v0.10.1](https://github.com/librescoot/battery-service/tree/0158894f0b65f0c5855fdfc1331d1ed32c0b6b2a).
+- Schlüssel: Das Display erklärt beim Anlernen die Besonderheiten von Handyschlüsseln; zufällige NFC-Kennungen benötigen einen zweiten identischen Lesevorgang. Die Installationsanweisung unterscheidet Neuinstallation mit Datenlöschung von einer Installation mit Erhalt der Daten. Quellen: [keycard-service v0.8.0](https://github.com/librescoot/keycard-service/tree/dfec0c97de0d3b9515dcfeb61732f87fcae312ef), [scootui-qt v1.33.0](https://github.com/librescoot/scootui-qt/tree/9db25f53db2e8675e198fb28413693d956b6da6d), [Installer v1.4.10](https://github.com/librescoot/installer/tree/v1.4.10).
+- Alarm: Die Hupe ist ab Werk aktiviert (`alarm.honk` standardmäßig `true`, abschaltbar). Beim Abbrechen werden Hupe und Warnblinker abgeschaltet; ein fehlgeschlagenes Abschalten wird erneut versucht. Alarmanlage und Bewegungssensor berücksichtigen auch den geplanten Winterschlaf. Quellen: [alarm-service v0.14.4](https://github.com/librescoot/alarm-service/tree/f995f40e0d5f252348fcb77fe2a3eb4eec488e75), [settings-service v0.15.1](https://github.com/librescoot/settings-service/blob/f48b27374716d708b2d9283052d3845a934e463a/settings.schema.json).
+- SIM: Anzeige von SIM-Anbieter und verwendetem Netz getrennt; PIN2/PUK2 wird nicht mit einer vollständigen SIM-Sperre gleichgesetzt. Quellen: [ScootUI v1.33.0](https://github.com/librescoot/scootui-qt/tree/9db25f53db2e8675e198fb28413693d956b6da6d), [modem-service v0.18.1](https://github.com/librescoot/modem-service/tree/f04bf09ee214dfdbbce6386c9d6ab2fc1a5dc28f).
+- Updates: Nach erfolgreicher Installation stellt sich die Firmware-Updatesuche selbst um. Gestufte Bluetooth-Übertragung mit späterem Installationsstart wird als Fähigkeit für kompatible Apps beschrieben, ohne sie einer bestimmten App zuzuschreiben. Quellen: [update-service v0.20.1](https://github.com/librescoot/update-service/tree/c2234fb15ae978ed3ed17b2292ea60042baff429), [bluetooth-service v0.21.5](https://github.com/librescoot/bluetooth-service/tree/744021f33570ee9563230846c036ad5d99cd4cef).
+- Fahrzeugzeichnungen: Seitenansicht, Lenkerzeichnung und die beiden abgeleiteten Schrittgrafiken (`ref-seitenansicht.svg`, `ref-lenker.svg`, `schritt-staender.svg`, `schritt-lenker.svg`) sind vereinfachte Vektorzeichnungen ohne CAD-Doppellinien, Clip-Artefakte und Mikro-Segmente. In `schritt-lenker.svg` dreht sich der vollständige Lenker samt Griff und Schaltern vor der feststehenden Frontverkleidung.
+- Links und QR-Codes: Sunshine ist aufgelöst und verlinkt (`sunshine.rescoot.org`). Seite 44 bündelt alle 9 externen Webadressen des Handbuchs als grobe Vektor-QR-Codes (Fehlerkorrektur L, minimierte Rastergröße).
+
+Apps sind nicht im Firmwaremanifest gepinnt. Die Hinweise zu Tiefschlaf und Firmwareübertragung sind im öffentlichen Client [stasis 2.0.6](https://github.com/rescoot/stasis/tree/252a44f146d2c02e24c7e63be0bd36f690ee2ff7) belegt, insbesondere in `assets/i18n/de.json`, `lib/hibernate_sheet.dart` und `lib/domain/update_planner.dart`. Der Hinweis auf den eingeschränkt verfügbaren Android-Schlüssel beruht auf der früheren [Basisprüfung](QUELLENPRUEFUNG.md), nicht auf einem aus 1.4.3 abgeleiteten App-Release. Fahrtenbuch und Doctor sind mit aktuellen Simulatoraufnahmen illustriert; Herkunft und synthetische Daten stehen in [inputs/screenshots/README.md](../inputs/screenshots/README.md).
+
+## Prüfung und offene Punkte
+
+- Beide Ziele mit dem dokumentierten Offline-Build und Chrome gebaut: Gesamthandbuch 46 Seiten einschließlich einer Leerseite vor dem Rückumschlag, Muster 12 Seiten, jeweils A5. `pdffonts` meldet alle verwendeten Schriften eingebettet.
+- Die Buildberichte melden keine offenen Verweise, Platzhalter, TODO-Kästen, verbotenen Zeichen oder Geometrieüberläufe. Ein erster Überlauf auf Seite 26 wurde durch Umstellen des Absatzes behoben und der Gesamtband erneut gebaut.
+- Betroffene Seiten des Gesamtbands sowie die geänderten Musterseiten wurden anhand der erzeugten PNGs und Kontaktbögen visuell auf Umbruch und Abschneidungen geprüft, insbesondere Karten, Doctor und Fahrtenbuch.
+- Kein Fahrzeug angesprochen; keine Hardwaretests. Die Prüfung ist statisch und ersetzt keinen vollständigen Audit aller historischen Bedienhinweise.
+- Lade- und Pflegehinweise wurden mit den öffentlichen Handbuchquellen abgeglichen. Die Empfehlung zum geladenen Fahrakku und zur regelmäßigen Kontrolle bleibt bestehen; unbelegte Angaben zum Akkuring und neue Reinigungsregeln wurden nicht aufgenommen.
+- Beim manuellen Winterschlaf unterscheidet das Handbuch jetzt das Loslassen vor und nach der Abfrage. Bei geplanter Hibernation nennt es den Ablauf eines verpassten Aufwachtermins; beim Tiefschlaf per App die Option ohne automatisches Aufwachen und die standardmäßige Obergrenze von sieben Tagen. Belege: [vehicle-service v0.15.0](https://github.com/librescoot/vehicle-service/blob/v0.15.0/internal/fsm/definition.go), [pm-service v0.9.4](https://github.com/librescoot/pm-service/blob/v0.9.4/internal/hibernation/scheduler.go), [stasis 2.0.6](https://github.com/rescoot/stasis/blob/2.0.6/lib/hibernate_sheet.dart).

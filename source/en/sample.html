@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Librescoot Rider's Manual 1.4.3, Sample</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Page 1: Cover -->
+<section class="page cover" data-folio="">
+  <div class="body">
+    <img class="logotype" src="assets/img/librescoot-logotype.svg" alt="Librescoot">
+    <div class="kicker">Stable 1.4.3</div>
+    <h1>Rider's Manual</h1>
+    <div class="sub">for the unu Scooter Pro with Librescoot</div>
+    <div class="rule"></div>
+    <div class="art">{{svg:ref-seitenansicht|plain}}</div>
+    <div class="meta">
+      <span>Sample</span>
+      <span>Stable 1.4.3 · Installer 1.4.10</span>
+    </div>
+    <p class="credits">Drawings created for this manual. Images and icons: <a href="https://librescoot.org/">Librescoot website</a> and <a href="https://github.com/librescoot/scootui-qt">scootui-qt</a>, partly adapted, <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>; selected icons: <a href="https://github.com/google/material-design-icons">Google Material Symbols</a>.</p>
+  </div>
+</section>
+
+<!-- Page 2: Contents -->
+<section class="page" data-folio="Contents">
+  <div class="body">
+    <div class="chapter-head"><h1>Contents</h1></div>
+    <p class="lead">Parts, controls, display, batteries, navigation and connections at a glance.</p>
+    <ol class="toc">
+      <li><span class="n">1</span><span class="t">Getting to know your scooter<span class="d">Scooter parts and layout</span></span><span class="p">{{pn:k1}}</span></li>
+      <li><span class="n">2</span><span class="t">Controls<span class="d">Handlebar, display, card reader, status LED, keys</span></span><span class="p">{{pn:k2}}</span></li>
+      <li><span class="n">3</span><span class="t">Unlocking and riding<span class="d">First ride, driving display, shortcut menu</span></span><span class="p">{{pn:k3}}</span></li>
+      <li><span class="n">4</span><span class="t">Parking and locking<span class="d">Parking, locking, handlebar lock, the four states</span></span><span class="p">{{pn:k4}}</span></li>
+      <li><span class="n">5</span><span class="t">The display<span class="d">Screen areas, warning icons, trip values, menu</span></span><span class="p">{{pn:k5}}</span></li>
+      <li class="later"><span class="n">6</span><span class="t">Keys: cards and Android phone<span class="d">Enrolling, managing, removing</span></span><span class="p">Preview</span></li>
+      <li class="later"><span class="n">7</span><span class="t">Batteries, charging and hibernation<span class="d">Battery swap, charger, backup batteries, scheduled hibernation</span></span><span class="p">Preview</span></li>
+      <li class="later"><span class="n">8</span><span class="t">Navigation and trip history<span class="d">Offline maps, multi-stop routes, trip history</span></span><span class="p">Preview</span></li>
+      <li class="later"><span class="n">9</span><span class="t">Connections and updates<span class="d">Bluetooth, USB, web interface, mobile network and cloud</span></span><span class="p">Preview</span></li>
+      <li class="later"><span class="n">10</span><span class="t">Troubleshooting<span class="d">Fault codes, emergency start, community support</span></span><span class="p">Preview</span></li>
+      <li><span class="n"></span><span class="t">Preview of Chapters 6 to 10<span class="d">briefly introduced in this sample</span></span><span class="p">{{pn:ausblick}}</span></li>
+    </ol>
+    <div class="note" style="margin-top:3mm">
+      <span class="t">How to read this manual</span>
+      <p>Circled numbers match the figure legend. Left and right are as seen from the rider's seat.</p>
+      <p>Menu paths look like this: [[Menu > Settings > Vehicle]]. Open the menu in park mode with two short pulls on the left brake lever ({{p:menue}}).</p>
+      <p>Lock and unlock refer to the scooter's vehicle state; handlebar lock and seatbox are named explicitly. Orange boxes mark safety notes.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Page 3: Chapter 1 -->
+<section class="page" data-folio="1 Getting to know your scooter">
+  <div class="body">
+    <div class="chapter-head" id="k1">
+      <div class="chapter-label">Chapter 1</div>
+      <h1>Getting to know your scooter</h1>
+    </div>
+    <p class="lead">Main components of the unu Scooter Pro at a glance.</p>
+    <figure id="abb-seite">
+      {{svg:ref-seitenansicht}}
+      <figcaption><span class="fn">{{fig:abb-seite}}</span>Left side of the unu Scooter Pro.</figcaption>
+    </figure>
+    <ol class="legend">
+      <li><span class="num">1</span><span>Mirrors</span></li>
+      <li><span class="num">2</span><span>Display with card reader<span class="sub">{{p:k2b}}</span></span></li>
+      <li><span class="num">3</span><span>Handlebar and controls<span class="sub">{{p:k2}}</span></span></li>
+      <li><span class="num">4</span><span>Bag hook</span></li>
+      <li><span class="num">5</span><span>Seatbox<span class="sub">battery slots and storage underneath</span></span></li>
+      <li><span class="num">6</span><span>Taillight</span></li>
+      <li><span class="num">7</span><span>Rear suspension</span></li>
+      <li><span class="num">8</span><span>License plate holder</span></li>
+      <li><span class="num">9</span><span>Rear wheel with motor</span></li>
+      <li><span class="num">10</span><span>Passenger footrest</span></li>
+      <li><span class="num">11</span><span>Kickstand<span class="sub">switches between park and drive mode</span></span></li>
+      <li><span class="num">12</span><span>Footboard<span class="sub">main computer (MDB) underneath</span></span></li>
+      <li><span class="num">13</span><span>Front wheel with disc brake</span></li>
+      <li><span class="num">14</span><span>Front suspension</span></li>
+      <li><span class="num">15</span><span>Front blinkers</span></li>
+      <li><span class="num">16</span><span>Headlight</span></li>
+    </ol>
+  </div>
+</section>
+
+<!-- Page 4: Chapter 2 -->
+<section class="page" data-folio="2 Controls">
+  <div class="body">
+    <div class="chapter-head" id="k2">
+      <div class="chapter-label">Chapter 2</div>
+      <h1>Controls</h1>
+    </div>
+    <p class="lead">Everything needed to ride is on the handlebar. While parked, some controls have extra functions.</p>
+    <figure id="abb-lenker">
+      {{svg:ref-lenker}}
+      <figcaption><span class="fn">{{fig:abb-lenker}}</span>Handlebar from the rider's view, switches highlighted in color.</figcaption>
+    </figure>
+    <ol class="legend">
+      <li><span class="num">1</span><span>Left brake lever, rear brake</span></li>
+      <li><span class="num">2</span><span>Blinker switch</span></li>
+      <li><span class="num">3</span><span>{{icon:seat-button}} Seatbox switch</span></li>
+      <li><span class="num">4</span><span>Display with card reader ({{p:k2b}})</span></li>
+      <li><span class="num">5</span><span>Bag hook</span></li>
+      <li><span class="num">6</span><span>Horn</span></li>
+      <li><span class="num">7</span><span>Throttle</span></li>
+      <li><span class="num">8</span><span>Right brake lever, front brake</span></li>
+      <li><span class="num">9</span><span>Mirrors</span></li>
+    </ol>
+    <h2>Handlebar functions</h2>
+    <table class="compact">
+      <thead><tr><th style="width:27%">Control</th><th style="width:33%">In drive mode</th><th>In park mode</th></tr></thead>
+      <tbody>
+        <tr><td><span class="num">1</span> Left lever</td><td class="plain">rear brake</td><td class="plain">two short pulls: open menu ({{p:menue}})</td></tr>
+        <tr><td><span class="num">8</span> Right lever</td><td class="plain">front brake</td><td class="plain">in menu: select</td></tr>
+        <tr><td>Both levers</td><td class="plain">brake</td><td class="plain">hold: version box; longer: hibernation ({{p:winterschlaf}})</td></tr>
+        <tr><td><span class="num">2</span> Blinker</td><td class="plain">signal left or right</td><td class="plain">signal left or right</td></tr>
+        <tr><td><span class="num">3</span> {{icon:seat-button}} Seatbox</td><td class="plain">hold: shortcut menu; double tap: hazards ({{p:schnellmenue}})</td><td class="plain">press: open seatbox</td></tr>
+        <tr><td><span class="num">6</span> Horn</td><td class="plain">honk</td><td class="plain">honk</td></tr>
+        <tr><td><span class="num">7</span> Throttle</td><td class="plain">accelerate</td><td class="plain">no drive</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- Page 5: Display, card reader, keys -->
+<section class="page" data-folio="2 Controls">
+  <div class="body">
+    <div class="cont-head">Chapter 2 &nbsp;Controls</div>
+    <h2 class="first" id="k2b">Display, card reader and status LED</h2>
+    <div class="cols c5-7">
+      <figure id="abb-display">
+        {{svg:dbc}}
+        <figcaption><span class="fn">{{fig:abb-display}}</span>Front view of the display in park mode. Screenshot with sample data.</figcaption>
+      </figure>
+      <div>
+        <ol class="legend one" style="margin-top:4mm">
+          <li><span class="num">1</span><span>Card reader<span class="sub">marking to the left of the screen</span></span></li>
+          <li><span class="num">2</span><span>Screen<span class="sub">{{p:k5}}</span></span></li>
+          <li><span class="num">3</span><span>Status LED<span class="sub">midway down the right bezel; ambient light sensor sits above it</span></span></li>
+        </ol>
+      </div>
+    </div>
+    <h2>Your keys</h2>
+    <p>Hold an enrolled NFC keycard against the card symbol for about one second. You can also enroll the card from your starter kit.</p>
+    <p>Android NFC phone keys require an enabled build of Librescoot Mobile; they are hidden in release builds. Hold the enrolled, unlocked phone against the reader.</p>
+    <p>A teach-in card enrolls additional keys and never unlocks the scooter itself. Manage keys under [[Menu > Settings > Keycards]].</p>
+    <h2>Status LED signals</h2>
+    <table>
+      <thead><tr><th style="width:34%">LED</th><th>Meaning</th></tr></thead>
+      <tbody>
+        <tr><td><span class="led y"></span><span class="led g"></span> yellow, then briefly green</td><td class="plain">Key recognized. The scooter unlocks or locks.</td></tr>
+        <tr><td><span class="led r"></span> brief red</td><td class="plain">Key rejected. During enrollment: card is already saved.</td></tr>
+        <tr><td><span class="led y"></span> steady yellow</td><td class="plain">Teach-in mode active; blinkers stay lit continuously.</td></tr>
+        <tr><td>{{icon:led-armed}} slow red blink</td><td class="plain">Alarm armed; only with "Armed indicator LED" enabled.</td></tr>
+        <tr><td>{{icon:led-blink}} blinking yellow</td><td class="plain">Scooter is waiting for a teach-in card, for example after a manual reinstall with no stored cards.</td></tr>
+      </tbody>
+    </table>
+    <div class="note">
+      <p>An enrolled keycard is all you need to ride. App, SIM card and cloud account are optional.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Page 6: Chapter 3 -->
+<section class="page" data-folio="3 Unlocking and riding">
+  <div class="body">
+    <div class="chapter-head" id="k3">
+      <div class="chapter-label">Chapter 3</div>
+      <h1>Unlocking and riding</h1>
+    </div>
+    <p class="lead">Three steps from a locked scooter to riding.</p>
+    <figure id="abb-auf">
+      <div class="steps three">
+        <div class="step">
+          <div class="pic"><span class="num tag">1</span>{{svg:schritt-karte|auf}}</div>
+          <h3>Tap key</h3>
+          <p>Hold a card or unlocked phone against the card symbol for about one second. The LED lights yellow, then green.</p>
+          <p class="result">Park mode: {{icon:parking}} on screen.</p>
+        </div>
+        <div class="step">
+          <div class="pic"><span class="num tag">2</span>{{svg:schritt-lenker|auf}}</div>
+          <h3>Release handlebar lock</h3>
+          <p>Push the handlebar to the left stop. The handlebar lock disengages by motor.</p>
+          <p class="result">If it stays engaged, push left again.</p>
+        </div>
+        <div class="step">
+          <div class="pic"><span class="num tag">3</span>{{svg:schritt-staender|auf}}</div>
+          <h3>Raise kickstand</h3>
+          <p>Sit on the scooter and fold the kickstand up.</p>
+          <p class="result">Drive mode: {{icon:parking}} disappears.</p>
+        </div>
+      </div>
+      <figcaption><span class="fn">{{fig:abb-auf}}</span>Unlocking. Image 2 shows the left handlebar half from your view: turning left brings the left grip toward you. Gray: center position. Kickstand seen from the left.</figcaption>
+    </figure>
+    <div class="caution">
+      <span class="t">Safety</span>
+      <p>With the kickstand up, the scooter is ready to drive. Apply throttle only when seated securely and ready to move.</p>
+    </div>
+    <h2>Before your first ride</h2>
+    <ol class="seq tight">
+      <li>In park mode, test the blinkers, horn and seatbox switch. If any fail to respond, the front slot may be missing a battery.</li>
+      <li>Ride the first few meters at walking pace in a quiet area and test both brakes. They should slow the scooter smoothly and predictably.</li>
+    </ol>
+    <p class="small muted">If the display shows code E14, the throttle was held at power-up. Release it and the message clears on its own.</p>
+  </div>
+</section>
+
+<!-- Page 7: On the road -->
+<section class="page" data-folio="3 Unlocking and riding">
+  <div class="body">
+    <div class="cont-head">Chapter 3 &nbsp;Unlocking and riding</div>
+    <h2 class="first" id="unterwegs">On the road</h2>
+    <div class="cols c5-7">
+      <figure id="abb-fahrt">
+        <img class="shot" src="assets/img/cluster-driving.png" alt="Display in drive mode showing speedometer at 32 km/h and energy gauge at 2.9 kW">
+        <figcaption><span class="fn">{{fig:abb-fahrt}}</span>Display in drive mode, dark theme. Screenshot with sample data.</figcaption>
+      </figure>
+      <div>
+        <p>Your speed appears in the center. Below it, the energy gauge shows current motor power.</p>
+        <p>Accelerating moves the bar right toward <span class="disp">DISCHARGE</span>. Coasting or braking moves it left toward <span class="disp">REGEN</span>, feeding energy back into the battery.</p>
+        <p>With a GPS fix, the road name and, when available, the speed limit also appear below the speedometer.</p>
+      </div>
+    </div>
+    <h2>Braking and signaling</h2>
+    <p>The right lever operates the front brake, the left lever the rear brake. Use the blinker switch on the left to signal; the display shows a green arrow {{icon:turn-left}} {{icon:turn-right}}. In drive mode, two short presses on the seatbox switch toggle the hazard lights on and off.</p>
+    <h2 id="schnellmenue">Shortcut menu while riding</h2>
+    <figure id="abb-schnell">
+      {{svg:schnellmenue}}
+      <figcaption><span class="fn">{{fig:abb-schnell}}</span>Seatbox switch sequence. Available entries depend on your configuration.</figcaption>
+    </figure>
+    <p style="margin-top:2.5mm">Hold the seatbox switch until the entry you want is highlighted, release it, then press once more within three seconds. Use it to switch between cluster and map views or start a saved destination.</p>
+    <div class="caution">
+      <span class="t">Safety</span>
+      <p>Keep your eyes on the road while riding. The main menu only opens in park mode; change settings while stopped.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Page 8: Chapter 4 -->
+<section class="page" data-folio="4 Parking and locking">
+  <div class="body">
+    <div class="chapter-head" id="k4">
+      <div class="chapter-label">Chapter 4</div>
+      <h1>Parking and locking</h1>
+    </div>
+    <p class="lead">Park, lock the scooter and engage the handlebar lock.</p>
+    <figure id="abb-ab">
+      <div class="steps three">
+        <div class="step">
+          <div class="pic"><span class="num tag">1</span>{{svg:schritt-staender|reverse}}</div>
+          <h3>Lower kickstand</h3>
+          <p>Come to a stop and fold out the kickstand.</p>
+          <p class="result">Park mode: {{icon:parking}} on screen.</p>
+        </div>
+        <div class="step">
+          <div class="pic"><span class="num tag">2</span>{{svg:schritt-karte|ab}}</div>
+          <h3>Tap key</h3>
+          <p>Hold the key against the card symbol until the LED turns green.</p>
+          <p class="result">Standby: locked, display off.</p>
+        </div>
+        <div class="step">
+          <div class="pic"><span class="num tag">3</span>{{svg:schritt-lenker|ab}}</div>
+          <h3>Turn handlebar left</h3>
+          <p>Push the handlebar to the left stop within the window.</p>
+          <p class="result">The handlebar lock engages by motor.</p>
+        </div>
+      </div>
+      <figcaption><span class="fn">{{fig:abb-ab}}</span>Parking and locking.</figcaption>
+    </figure>
+    <figure id="abb-zeit" style="margin-top:3mm">
+      {{svg:zeitfenster}}
+      <figcaption><span class="fn">{{fig:abb-zeit}}</span>Window to engage the handlebar lock after locking.</figcaption>
+    </figure>
+    <h2>Check before walking away</h2>
+    <p>Gently turn the handlebar left and right. If it moves freely, the handlebar lock did not engage: unlock the scooter, lock it again, and push the handlebar left within the window. Even though the scooter enters standby on its own after about 15 minutes, lock it yourself and check the handlebar lock.</p>
+    <h2>Seatbox and alarm</h2>
+    <p>In park mode, the seatbox switch opens the seatbox. It holds a helmet and gives access to the batteries. The scooter will not enter drive mode while the seatbox is open.</p>
+    <p>Enable the alarm under [[Menu > Settings > Vehicle > Alarm]]. It arms in standby; leave the scooter undisturbed after locking.</p>
+  </div>
+</section>
+
+<!-- Page 9: States -->
+<section class="page" data-folio="4 Parking and locking">
+  <div class="body">
+    <div class="cont-head">Chapter 4 &nbsp;Parking and locking</div>
+    <h2 class="first" id="zustaende">The four states of your scooter</h2>
+    <p>The state controls whether you can ride and how much power is used. Locking switches from park mode to standby; unlocking switches back.</p>
+    <figure id="abb-zustaende" style="margin:2mm 0 0">
+      {{svg:zustaende}}
+      <figcaption><span class="fn">{{fig:abb-zustaende}}</span>States and transitions. Dashed: manual hibernation from park mode.</figcaption>
+    </figure>
+    <h2 id="winterschlaf">Manual hibernation</h2>
+    <ol class="seq tight">
+      <li>Scooter in park mode, seatbox closed.</li>
+      <li>Pull and hold both brake levers. After 3 s the version box appears; keep holding.</li>
+      <li>After 15 s total, the display prompts to confirm. Tap a keycard or hold 15 s longer.</li>
+      <li>Three seconds later, the scooter enters hibernation.</li>
+    </ol>
+    <p>Releasing before the prompt cancels; afterwards, the seatbox switch cancels. Wake by holding both brake levers about 6 s or connecting over paired Bluetooth. A keycard alone will not wake it.</p>
+    <p class="small muted">Backup batteries still discharge slowly in hibernation. Leave a charged main battery in front and check every few weeks.</p>
+    <h2>Hop-on / hop-off for short stops</h2>
+    <p>Under [[Menu > Settings > Vehicle > Hop On / Hop Off…]], set a combo on the brakes, horn and seatbox switch. The scooter stays on with a lock screen until you re-enter it. Lock with your key when leaving it unattended.</p>
+  </div>
+</section>
+
+<!-- Page 10: Chapter 5 -->
+<section class="page" data-folio="5 The display">
+  <div class="body">
+    <div class="chapter-head" id="k5">
+      <div class="chapter-label">Chapter 5</div>
+      <h1>The display</h1>
+    </div>
+    <p class="lead">Screen areas, warning icons, trip values and menu.</p>
+    <div class="cols c7-5">
+      <figure id="abb-anatomie">
+        {{svg:anatomie}}
+        <figcaption><span class="fn">{{fig:abb-anatomie}}</span>Display in park mode, dark theme. Screenshot with sample data. Visible icons depend on hardware and settings.</figcaption>
+      </figure>
+      <ol class="legend one" style="margin-top:0">
+        <li><span class="num">1</span><span>Batteries<span class="sub">charge level per battery, or range. Beside it: backup batteries {{icon:cbb}} {{icon:aux}} or open seatbox {{icon:seat-open}}.</span></span></li>
+        <li><span class="num">2</span><span>Clock<span class="sub">can sync via GPS, even without a SIM</span></span></li>
+        <li><span class="num">3</span><span>Connections and sensors<span class="sub">such as temperature, update, GPS, Bluetooth, cloud, mobile network</span></span></li>
+        <li><span class="num">4</span><span>Speedometer<span class="sub">speed in km/h</span></span></li>
+        <li><span class="num">5</span><span>Energy gauge<span class="sub">power in kW</span></span></li>
+        <li><span class="num">6</span><span>Warning icons<span class="sub">{{p:warn}}</span></span></li>
+        <li><span class="num">7</span><span>Trip values<span class="sub">{{p:fahrtwerte}}</span></span></li>
+      </ol>
+    </div>
+    <p style="margin-top:3mm">Many top-right icons appear only when relevant, such as {{icon:cold}} in cold weather. Choose what stays visible under [[Menu > Settings > Appearance > Status Bar]].</p>
+    <h2>Light, dark or automatic</h2>
+    <p>Under [[Menu > Settings > Appearance > Theme]], select Light, Dark or Automatic based on ambient light. Backlight brightness is set separately in the same menu.</p>
+    <h2>Top-bar notifications</h2>
+    <p>Colored banners at the top usually dismiss themselves. Connection-problem notices stay visible until the fault is cleared.</p>
+    <table class="toast">
+      <tbody>
+        <tr><td><span class="led r"></span> Red</td><td class="plain">Error or critical warning</td><td><span class="led" style="background:#e8862a"></span> Orange</td><td class="plain">Warning</td></tr>
+        <tr><td><span class="led g"></span> Green</td><td class="plain">Success</td><td><span class="led" style="background:#2f73c9"></span> Blue</td><td class="plain">Information</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- Page 11: Warning icons, trip values, menu -->
+<section class="page" data-folio="5 The display">
+  <div class="body">
+    <div class="cont-head">Chapter 5 &nbsp;The display</div>
+    <h2 class="first" id="warn">Warning icons</h2>
+    <div class="cols c4-8">
+      <figure id="abb-warn">
+        {{svg:warnblinker}}
+        <figcaption><span class="fn">{{fig:abb-warn}}</span>Hazard lights on, scooter in park mode. Sample data.</figcaption>
+      </figure>
+      <table class="symbol-table">
+        <thead><tr><th style="width:38%">Icon</th><th>Meaning</th></tr></thead>
+        <tbody>
+          <tr><td>{{icon:parking}} red</td><td class="plain">Park mode, parking brake engaged</td></tr>
+          <tr><td>{{icon:hazards}} blinking</td><td class="plain">Hazard lights on</td></tr>
+          <tr><td>{{icon:engine}} yellow</td><td class="plain">Motor or controller fault, or interrupted board connection</td></tr>
+          <tr><td>{{icon:turtle}} orange</td><td class="plain">Battery at 20% or below, motor power reduced</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="small" style="margin-top:1.5mm">Warning icons appear at bottom left; blinker arrows {{icon:turn-left}} {{icon:turn-right}} appear at the top.</p>
+    <h2 id="fahrtwerte">Trip values in the bottom row</h2>
+    <table>
+      <tbody>
+        <tr><td style="width:22%"><span class="disp">DURATION</span></td><td class="plain">Time spent ready to drive, updated every second</td></tr>
+        <tr><td><span class="disp">Ø SPEED</span></td><td class="plain">Average speed, updated every second</td></tr>
+        <tr><td><span class="disp">TRIP</span></td><td class="plain">Trip distance</td></tr>
+        <tr><td><span class="disp">TOTAL</span></td><td class="plain">Total scooter odometer, cannot be reset</td></tr>
+      </tbody>
+    </table>
+    <p style="margin-top:2mm">The first three values survive a restart. Configure when they reset under [[Menu > Settings > Vehicle > Trip counter]]: every ride, every day, on battery swap or manually. Trip history tracks rides separately ({{p:ausblick}}).</p>
+    <h2 id="menue">Using the menu</h2>
+    <p>Operate the menu with both brake levers. Hints along the bottom edge show the active gestures.</p>
+    <table>
+      <thead><tr><th style="width:38%">Gesture</th><th>Action</th></tr></thead>
+      <tbody>
+        <tr><td>Left double tap</td><td class="plain">Open menu, park mode only</td></tr>
+        <tr><td>Left tap</td><td class="plain">Next item</td></tr>
+        <tr><td>Left hold</td><td class="plain">Back; hold 3 s to exit menu</td></tr>
+        <tr><td>Right tap</td><td class="plain">Select or confirm</td></tr>
+        <tr><td>Right hold</td><td class="plain">Row action, when offered</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- Page 12: Preview -->
+<section class="page" data-folio="Preview">
+  <div class="body">
+    <div class="chapter-head" id="ausblick">
+      <div class="chapter-label">Preview</div>
+      <h1>Chapters 6 to 10</h1>
+    </div>
+    <p class="lead">Chapters 1 to 5 cover everyday riding. The remaining chapters cover keys, batteries, navigation, connections and troubleshooting.</p>
+    <div class="cols c2 shots2">
+      <figure id="abb-route">
+        <img class="shot" src="assets/img/route-overview.png" alt="Route overview with three intermediate stops in Berlin">
+        <figcaption><span class="fn">{{fig:abb-route}}</span>Route overview with three stops, sample data. Map data © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a></figcaption>
+      </figure>
+      <figure id="abb-trip">
+        <img class="shot" src="assets/img/trip-history.png" alt="Trip details with distance, riding time, average speed and GPS trace">
+        <figcaption><span class="fn">{{fig:abb-trip}}</span>Trip history with simulated sample data. Map data © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a></figcaption>
+      </figure>
+    </div>
+    <div class="outlook-sec">
+      <h3><span class="k">6</span> Keys: cards and Android phone</h3>
+      <p>Enrolling and removing cards and Android NFC phone keys, plus notes on supported app builds.</p>
+      <h3><span class="k">7</span> Batteries, charging and hibernation</h3>
+      <p>Swapping and charging batteries, backup batteries, dual-battery mode after retrofit, and timed or scheduled hibernation.</p>
+      <h3><span class="k">8</span> Navigation and trip history</h3>
+      <p>Offline maps, multi-stop routes and resuming after a pause. Trip history records completed rides from 100 m, separately from the trip counter.</p>
+      <h3><span class="k">9</span> Connections and updates</h3>
+      <p>Updates via Bluetooth with a compatible app, USB Update Mode and the web interface. For USB, remove the footwell cover and connect a computer while the scooter stays unlocked. New versions activate on restart. Mobile data and cloud are optional.</p>
+      <h3><span class="k">10</span> Troubleshooting</h3>
+      <p>Fault codes, fault history, Doctor diagnostics and emergency start. Community help on Discord; bug reports on GitHub.</p>
+    </div>
+  </div>
+</section>
+</body>
+</html>

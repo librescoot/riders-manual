@@ -1,0 +1,457 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<title>Librescoot Fahrerhandbuch 1.4.3, Musterheft</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Seite 1: Titel -->
+<section class="page cover" data-folio="">
+  <div class="body">
+    <img class="logotype" src="assets/img/librescoot-logotype.svg" alt="Librescoot">
+    <div class="kicker">Stable 1.4.3</div>
+    <h1>Fahrer&shy;handbuch</h1>
+    <div class="sub">für den unu Scooter Pro mit Librescoot</div>
+    <div class="rule"></div>
+    <div class="art">{{svg:ref-seitenansicht|plain}}</div>
+    <div class="meta">
+      <span>Musterheft</span>
+      <span>Stable 1.4.3 · Installer 1.4.10</span>
+    </div>
+    <p class="credits">Zeichnungen für dieses Heft. Bilder und Symbole: <a href="https://librescoot.org/">Librescoot-Website</a> und <a href="https://github.com/librescoot/scootui-qt">scootui-qt</a>, teils bearbeitet, <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>; einzelne Symbole: <a href="https://github.com/google/material-design-icons">Google Material Symbols</a>.</p>
+  </div>
+</section>
+
+<!-- Seite 2: Inhalt -->
+<section class="page" data-folio="Inhalt">
+  <div class="body">
+    <div class="chapter-head"><h1>Inhalt</h1></div>
+    <p class="lead">Aufbau, Bedienung, Display, Akkus, Navigation und Verbindungen im Überblick.</p>
+    <ol class="toc">
+      <li><span class="n">1</span><span class="t">Deinen Roller kennenlernen<span class="d">Teile und Seiten des Rollers</span></span><span class="p">{{pn:k1}}</span></li>
+      <li><span class="n">2</span><span class="t">Bedienelemente<span class="d">Lenker, Display, Kartenleser, Status-LED, Schlüssel</span></span><span class="p">{{pn:k2}}</span></li>
+      <li><span class="n">3</span><span class="t">Aufschließen und losfahren<span class="d">Erste Fahrt, Anzeigen unterwegs, Schnellmenü</span></span><span class="p">{{pn:k3}}</span></li>
+      <li><span class="n">4</span><span class="t">Abstellen und abschließen<span class="d">Parken, Sperren, Lenkschloss, die vier Zustände</span></span><span class="p">{{pn:k4}}</span></li>
+      <li><span class="n">5</span><span class="t">Das Display<span class="d">Bereiche, Warnsymbole, Fahrtwerte, Menü</span></span><span class="p">{{pn:k5}}</span></li>
+      <li class="later"><span class="n">6</span><span class="t">Schlüssel: Karten und Android-Handy<span class="d">Anlernen, verwalten, entfernen</span></span><span class="p">Ausblick</span></li>
+      <li class="later"><span class="n">7</span><span class="t">Akkus, Laden und Winterschlaf<span class="d">Akkuwechsel, Ladestation, Stützbatterien, geplanter Winterschlaf</span></span><span class="p">Ausblick</span></li>
+      <li class="later"><span class="n">8</span><span class="t">Navigation und Fahrtenbuch<span class="d">Offline-Karten, Routen mit Stopps, Fahrtenverlauf</span></span><span class="p">Ausblick</span></li>
+      <li class="later"><span class="n">9</span><span class="t">Verbindungen und Updates<span class="d">Bluetooth, USB, Web-Oberfläche, Mobilfunk und Cloud</span></span><span class="p">Ausblick</span></li>
+      <li class="later"><span class="n">10</span><span class="t">Hilfe bei Störungen<span class="d">Fehlercodes, Notstart, Kontakt zur Community</span></span><span class="p">Ausblick</span></li>
+      <li><span class="n"></span><span class="t">Ausblick auf die Kapitel 6 bis 10<span class="d">im Musterheft nur kurz vorgestellt</span></span><span class="p">{{pn:ausblick}}</span></li>
+    </ol>
+    <div class="note" style="margin-top:3mm">
+      <span class="t">So liest du dieses Heft</span>
+      <p>Zahlen in Kreisen gehören zur Legende der Abbildung. Links und rechts gelten von der Sitzbank aus gesehen.</p>
+      <p>Menüpfade sehen so aus: [[Menü > Einstellungen > Fahrzeug]]. Das Menü öffnest du im Parkmodus mit zwei kurzen Zügen am linken Bremshebel ({{p:menue}}).</p>
+      <p>Sperren und Entsperren meint den Zustand des Rollers, Lenkschloss und Sitzbank nennen wir eigens. Orange markierte Hinweise betreffen deine Sicherheit.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Seite 3: Kapitel 1 -->
+<section class="page" data-folio="1 Deinen Roller kennenlernen">
+  <div class="body">
+    <div class="chapter-head" id="k1">
+      <div class="chapter-label">Kapitel 1</div>
+      <h1>Deinen Roller kennenlernen</h1>
+    </div>
+    <p class="lead">Die wichtigsten Bauteile des unu Scooter Pro im Überblick.</p>
+    <figure id="abb-seite">
+      {{svg:ref-seitenansicht}}
+      <figcaption><span class="fn">{{fig:abb-seite}}</span>Linke Seite des unu Scooter Pro.</figcaption>
+    </figure>
+    <ol class="legend">
+      <li><span class="num">1</span><span>Spiegel</span></li>
+      <li><span class="num">2</span><span>Display mit Kartenleser<span class="sub">{{p:k2b}}</span></span></li>
+      <li><span class="num">3</span><span>Lenker mit Bedienelementen<span class="sub">{{p:k2}}</span></span></li>
+      <li><span class="num">4</span><span>Gepäckhaken</span></li>
+      <li><span class="num">5</span><span>Sitzbank<span class="sub">darunter Akkuschächte und Stauraum</span></span></li>
+      <li><span class="num">6</span><span>Rücklicht</span></li>
+      <li><span class="num">7</span><span>Hinterradfederung</span></li>
+      <li><span class="num">8</span><span>Kennzeichenhalter</span></li>
+      <li><span class="num">9</span><span>Hinterrad mit Motor</span></li>
+      <li><span class="num">10</span><span>Beifahrer-Fußstütze</span></li>
+      <li><span class="num">11</span><span>Seitenständer<span class="sub">wechselt zwischen Park- und Fahrmodus</span></span></li>
+      <li><span class="num">12</span><span>Trittbrett<span class="sub">darunter der Hauptcomputer (MDB)</span></span></li>
+      <li><span class="num">13</span><span>Vorderrad mit Scheibenbremse</span></li>
+      <li><span class="num">14</span><span>Vorderradfederung</span></li>
+      <li><span class="num">15</span><span>Blinker vorn</span></li>
+      <li><span class="num">16</span><span>Scheinwerfer</span></li>
+    </ol>
+  </div>
+</section>
+
+<!-- Seite 4: Kapitel 2 -->
+<section class="page" data-folio="2 Bedienelemente">
+  <div class="body">
+    <div class="chapter-head" id="k2">
+      <div class="chapter-label">Kapitel 2</div>
+      <h1>Bedienelemente</h1>
+    </div>
+    <p class="lead">Alles für die Fahrt sitzt am Lenker. Im Stand haben einige Elemente zusätzliche Aufgaben.</p>
+    <figure id="abb-lenker">
+      {{svg:ref-lenker}}
+      <figcaption><span class="fn">{{fig:abb-lenker}}</span>Lenker aus deiner Sicht, Schalter farbig hervorgehoben.</figcaption>
+    </figure>
+    <ol class="legend">
+      <li><span class="num">1</span><span>Linker Bremshebel, Hinterradbremse</span></li>
+      <li><span class="num">2</span><span>Blinkerschalter</span></li>
+      <li><span class="num">3</span><span>{{icon:seat-button}} Sitzbank-Schalter</span></li>
+      <li><span class="num">4</span><span>Display mit Kartenleser ({{p:k2b}})</span></li>
+      <li><span class="num">5</span><span>Gepäckhaken</span></li>
+      <li><span class="num">6</span><span>Hupe</span></li>
+      <li><span class="num">7</span><span>Gasgriff</span></li>
+      <li><span class="num">8</span><span>Rechter Bremshebel, Vorderradbremse</span></li>
+      <li><span class="num">9</span><span>Spiegel</span></li>
+    </ol>
+    <h2>Funktionen am Lenker</h2>
+    <table class="compact">
+      <thead><tr><th style="width:27%">Element</th><th style="width:33%">Im Fahrmodus</th><th>Im Parkmodus</th></tr></thead>
+      <tbody>
+        <tr><td><span class="num">1</span> Linker Hebel</td><td class="plain">bremst hinten</td><td class="plain">zweimal kurz ziehen: Menü öffnen ({{p:menue}})</td></tr>
+        <tr><td><span class="num">8</span> Rechter Hebel</td><td class="plain">bremst vorn</td><td class="plain">im Menü: auswählen</td></tr>
+        <tr><td>Beide Hebel</td><td class="plain">bremsen</td><td class="plain">halten: Versionsbox, länger Winterschlaf ({{p:winterschlaf}})</td></tr>
+        <tr><td><span class="num">2</span> Blinker</td><td class="plain">links oder rechts blinken</td><td class="plain">links oder rechts blinken</td></tr>
+        <tr><td><span class="num">3</span> {{icon:seat-button}} Sitzbank</td><td class="plain">halten: Schnellmenü, zweimal kurz: Warnblinker ({{p:schnellmenue}})</td><td class="plain">drücken: Sitzbank entriegeln</td></tr>
+        <tr><td><span class="num">6</span> Hupe</td><td class="plain">hupen</td><td class="plain">hupen</td></tr>
+        <tr><td><span class="num">7</span> Gasgriff</td><td class="plain">Gas geben</td><td class="plain">kein Antrieb</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- Seite 5: Display, Kartenleser, Schlüssel -->
+<section class="page" data-folio="2 Bedienelemente">
+  <div class="body">
+    <div class="cont-head">Kapitel 2 &nbsp;Bedienelemente</div>
+    <h2 class="first" id="k2b">Display, Kartenleser und Status-LED</h2>
+    <div class="cols c5-7">
+      <figure id="abb-display">
+        {{svg:dbc}}
+        <figcaption><span class="fn">{{fig:abb-display}}</span>Display von vorn mit Bildschirm im Parkmodus. Bildschirmfoto mit Beispieldaten.</figcaption>
+      </figure>
+      <div>
+        <ol class="legend one" style="margin-top:4mm">
+          <li><span class="num">1</span><span>Kartenleser<span class="sub">Markierung links neben dem Bildschirm</span></span></li>
+          <li><span class="num">2</span><span>Bildschirm<span class="sub">{{p:k5}}</span></span></li>
+          <li><span class="num">3</span><span>Status-LED<span class="sub">rechts auf halber Gehäusehöhe; darüber liegt der Lichtsensor</span></span></li>
+        </ol>
+      </div>
+    </div>
+    <h2>Deine Schlüssel</h2>
+    <p>Halte eine angelernte NFC-Schlüsselkarte etwa eine Sekunde auf das Karten-Symbol. Auch die Karte aus deiner Starterkit-Box kannst du anlernen.</p>
+    <p>Android-NFC-Schlüssel brauchen einen freigeschalteten Build von Librescoot Mobile. In Release-Builds sind sie ausgeblendet. Halte das angelernte Handy entsperrt an den Leser.</p>
+    <p>Eine Anlernkarte speichert weitere Schlüssel und entsperrt den Roller selbst nicht. Verwaltung: [[Menü > Einstellungen > Schlüsselkarten]].</p>
+    <h2>Signale der Status-LED</h2>
+    <table>
+      <thead><tr><th style="width:34%">LED</th><th>Bedeutung</th></tr></thead>
+      <tbody>
+        <tr><td><span class="led y"></span><span class="led g"></span> gelb, dann kurz grün</td><td class="plain">Schlüssel erkannt. Der Roller wird entsperrt oder gesperrt.</td></tr>
+        <tr><td><span class="led r"></span> kurz rot</td><td class="plain">Schlüssel nicht freigegeben. Beim Anlernen: Karte ist schon gespeichert.</td></tr>
+        <tr><td><span class="led y"></span> bleibt gelb</td><td class="plain">Lernmodus läuft, die Blinker leuchten dauerhaft.</td></tr>
+        <tr><td>{{icon:led-armed}} blinkt langsam rot</td><td class="plain">Alarm scharf; nur mit "LED bei scharfem Alarm".</td></tr>
+        <tr><td>{{icon:led-blink}} blinkt gelb</td><td class="plain">Der Roller wartet auf eine Anlernkarte, etwa nach einer manuellen Neuinstallation ohne Karten.</td></tr>
+      </tbody>
+    </table>
+    <div class="note">
+      <p>Zum Fahren genügt eine angelernte Schlüsselkarte. App, SIM-Karte und Cloud-Konto sind optional.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Seite 6: Kapitel 3 -->
+<section class="page" data-folio="3 Aufschließen und losfahren">
+  <div class="body">
+    <div class="chapter-head" id="k3">
+      <div class="chapter-label">Kapitel 3</div>
+      <h1>Aufschließen und losfahren</h1>
+    </div>
+    <p class="lead">In drei Schritten vom gesperrten Roller zur Fahrt.</p>
+    <figure id="abb-auf">
+      <div class="steps three">
+        <div class="step">
+          <div class="pic"><span class="num tag">1</span>{{svg:schritt-karte|auf}}</div>
+          <h3>Schlüssel auflegen</h3>
+          <p>Karte oder entsperrtes Handy etwa eine Sekunde auf das Karten-Symbol halten. Die LED leuchtet gelb, dann grün.</p>
+          <p class="result">Parkmodus: {{icon:parking}} im Display.</p>
+        </div>
+        <div class="step">
+          <div class="pic"><span class="num tag">2</span>{{svg:schritt-lenker|auf}}</div>
+          <h3>Lenkschloss lösen</h3>
+          <p>Drück den Lenker bis zum linken Anschlag. Das Lenkschloss wird motorisch entriegelt.</p>
+          <p class="result">Löst es sich nicht, drück erneut nach links.</p>
+        </div>
+        <div class="step">
+          <div class="pic"><span class="num tag">3</span>{{svg:schritt-staender|auf}}</div>
+          <h3>Ständer einklappen</h3>
+          <p>Aufsitzen und den Seitenständer einklappen.</p>
+          <p class="result">Fahrmodus: {{icon:parking}} verschwindet.</p>
+        </div>
+      </div>
+      <figcaption><span class="fn">{{fig:abb-auf}}</span>Aufschließen. Bild 2 zeigt die linke Lenkerhälfte aus deiner Sicht: Beim Einschlagen nach links kommt der linke Griff auf dich zu. Grau: Mittelstellung. Ständer von links gesehen.</figcaption>
+    </figure>
+    <div class="caution">
+      <span class="t">Sicherheit</span>
+      <p>Mit eingeklapptem Ständer ist der Roller fahrbereit. Dreh erst am Gasgriff, wenn du sicher sitzt und losfahren willst.</p>
+    </div>
+    <h2>Vor der ersten Fahrt</h2>
+    <ol class="seq tight">
+      <li>Probier im Parkmodus Blinker, Hupe und Sitzbank-Schalter aus. Reagiert eines davon nicht, fehlt vielleicht der Akku im vorderen Schacht.</li>
+      <li>Fahr die ersten Meter in einem ruhigen Bereich mit Schrittgeschwindigkeit und probier beide Bremsen aus. Sie sollen gleichmäßig und berechenbar verzögern.</li>
+    </ol>
+    <p class="small muted">Zeigt das Display den Code E14, war der Gasgriff beim Einschalten gedreht. Lass ihn los, die Meldung verschwindet von selbst.</p>
+  </div>
+</section>
+
+<!-- Seite 7: Unterwegs -->
+<section class="page" data-folio="3 Aufschließen und losfahren">
+  <div class="body">
+    <div class="cont-head">Kapitel 3 &nbsp;Aufschließen und losfahren</div>
+    <h2 class="first" id="unterwegs">Unterwegs</h2>
+    <div class="cols c5-7">
+      <figure id="abb-fahrt">
+        <img class="shot" src="assets/img/cluster-driving-dark-de.png" alt="Display im Fahrmodus mit Tachometer bei 32 km/h und Energie-Anzeige bei 2,9 kW">
+        <figcaption><span class="fn">{{fig:abb-fahrt}}</span>Display im Fahrmodus, dunkles Design. Bildschirmfoto mit Beispieldaten.</figcaption>
+      </figure>
+      <div>
+        <p>In der Mitte steht deine Geschwindigkeit. Darunter zeigt die Energie-Anzeige, wie viel Leistung der Motor gerade abgibt.</p>
+        <p>Beim Beschleunigen wandert der Balken nach rechts zu <span class="disp">ENTLADUNG</span>. Beim Ausrollen und Bremsen wandert er nach links zu <span class="disp">REKU</span>, dann lädt der Roller Energie zurück in den Akku.</p>
+        <p>Mit GPS-Position erscheinen unter dem Tacho auch Straßenname und, wenn bekannt, das Tempolimit.</p>
+      </div>
+    </div>
+    <h2>Bremsen und blinken</h2>
+    <p>Der rechte Hebel bremst das Vorderrad, der linke das Hinterrad. Mit dem Blinkerschalter links blinkst du, das Display zeigt dazu einen grünen Pfeil {{icon:turn-left}} {{icon:turn-right}}. Die Warnblinker schaltest du im Fahrmodus mit zwei kurzen Drücken auf den Sitzbank-Schalter ein und genauso wieder aus.</p>
+    <h2 id="schnellmenue">Schnellmenü während der Fahrt</h2>
+    <figure id="abb-schnell">
+      {{svg:schnellmenue}}
+      <figcaption><span class="fn">{{fig:abb-schnell}}</span>Ablauf am Sitzbank-Schalter. Welche Einträge erscheinen, hängt von deiner Einrichtung ab.</figcaption>
+    </figure>
+    <p style="margin-top:2.5mm">Halte den Sitzbank-Schalter, bis der gewünschte Eintrag markiert ist, lass los und drück innerhalb von drei Sekunden noch einmal kurz. So wechselst du etwa zwischen Tacho und Karte oder startest ein gespeichertes Ziel.</p>
+    <div class="caution">
+      <span class="t">Sicherheit</span>
+      <p>Achte beim Fahren auf die Straße. Das Hauptmenü öffnet sich nur im Parkmodus; nimm Einstellungen im Stand vor.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Seite 8: Kapitel 4 -->
+<section class="page" data-folio="4 Abstellen und abschließen">
+  <div class="body">
+    <div class="chapter-head" id="k4">
+      <div class="chapter-label">Kapitel 4</div>
+      <h1>Abstellen und abschließen</h1>
+    </div>
+    <p class="lead">Parken, sperren und das Lenkschloss verriegeln.</p>
+    <figure id="abb-ab">
+      <div class="steps three">
+        <div class="step">
+          <div class="pic"><span class="num tag">1</span>{{svg:schritt-staender|reverse}}</div>
+          <h3>Ständer ausklappen</h3>
+          <p>Anhalten und den Seitenständer ausklappen.</p>
+          <p class="result">Parkmodus: {{icon:parking}} im Display.</p>
+        </div>
+        <div class="step">
+          <div class="pic"><span class="num tag">2</span>{{svg:schritt-karte|ab}}</div>
+          <h3>Schlüssel auflegen</h3>
+          <p>Schlüssel auf das Karten-Symbol halten, bis die LED grün leuchtet.</p>
+          <p class="result">Standby: gesperrt, Display aus.</p>
+        </div>
+        <div class="step">
+          <div class="pic"><span class="num tag">3</span>{{svg:schritt-lenker|ab}}</div>
+          <h3>Lenker nach links</h3>
+          <p>Lenker im Zeitfenster bis zum linken Anschlag drücken.</p>
+          <p class="result">Das Lenkschloss wird motorisch verriegelt.</p>
+        </div>
+      </div>
+      <figcaption><span class="fn">{{fig:abb-ab}}</span>Abstellen und abschließen.</figcaption>
+    </figure>
+    <figure id="abb-zeit" style="margin-top:3mm">
+      {{svg:zeitfenster}}
+      <figcaption><span class="fn">{{fig:abb-zeit}}</span>Zeitfenster für das Lenkschloss nach dem Sperren.</figcaption>
+    </figure>
+    <h2>Prüfen, bevor du gehst</h2>
+    <p>Beweg den Lenker leicht hin und her. Dreht er sich frei, ist das Lenkschloss nicht verriegelt: Entsperr den Roller, sperr ihn erneut und drück den Lenker im Zeitfenster nach links. Auch wenn der Roller nach etwa 15 Minuten von selbst in den Standby geht: Sperr ihn selbst und prüfe das Lenkschloss.</p>
+    <h2>Sitzbank und Alarmanlage</h2>
+    <p>Im Parkmodus entriegelt der Sitzbank-Schalter die Sitzbank. Darunter ist Platz für den Helm, und du erreichst die Akkus. Bei offener Sitzbank fährt der Roller nicht los.</p>
+    <p>Die Alarmanlage schaltest du unter [[Menü > Einstellungen > Fahrzeug > Alarm]] ein. Sie wird im Standby scharf. Beweg den Roller danach nicht mehr.</p>
+  </div>
+</section>
+
+<!-- Seite 9: Zustände -->
+<section class="page" data-folio="4 Abstellen und abschließen">
+  <div class="body">
+    <div class="cont-head">Kapitel 4 &nbsp;Abstellen und abschließen</div>
+    <h2 class="first" id="zustaende">Die vier Zustände deines Rollers</h2>
+    <p>Der Zustand bestimmt, ob du fahren kannst und wie viel Strom der Roller braucht. Sperren führt vom Parkmodus in den Standby, Entsperren zurück.</p>
+    <figure id="abb-zustaende" style="margin:2mm 0 0">
+      {{svg:zustaende}}
+      <figcaption><span class="fn">{{fig:abb-zustaende}}</span>Zustände und Übergänge. Gestrichelt: Winterschlaf von Hand aus dem Parkmodus.</figcaption>
+    </figure>
+    <h2 id="winterschlaf">Winterschlaf von Hand</h2>
+    <ol class="seq tight">
+      <li>Roller im Parkmodus, Sitzbank geschlossen.</li>
+      <li>Beide Bremshebel ziehen und halten. Nach drei Sekunden erscheint kurz die Versionsbox, weiter halten.</li>
+      <li>Nach insgesamt 15 Sekunden fragt das Display nach. Schlüsselkarte auflegen oder weitere 15 Sekunden halten.</li>
+      <li>Drei Sekunden später schläft der Roller.</li>
+    </ol>
+    <p>Bis zur Abfrage bricht Loslassen ab. Danach bleibt Zeit zum Bestätigen; der Sitzbank-Schalter bricht ab. Zum Aufwecken hältst du beide Bremshebel etwa sechs Sekunden oder verbindest ein gekoppeltes Handy per Bluetooth. Die Karte allein weckt den Roller nicht.</p>
+    <p class="small muted">Auch im Winterschlaf entladen sich die Stützbatterien. Lass einen geladenen Akku vorn und schau alle paar Wochen nach dem Roller.</p>
+    <h2>Hop-on / Hop-off für kurze Stopps</h2>
+    <p>Unter [[Menü > Einstellungen > Fahrzeug > Hop-on / Hop-off]] legst du eine Tastenfolge aus Bremsen, Hupe und Sitzbank-Schalter fest. Der Roller bleibt eingeschaltet und zeigt einen Sperrbildschirm, bis du die Folge wieder eingibst. Unbeaufsichtigt sperrst du ihn mit dem Schlüssel.</p>
+  </div>
+</section>
+
+<!-- Seite 10: Kapitel 5 -->
+<section class="page" data-folio="5 Das Display">
+  <div class="body">
+    <div class="chapter-head" id="k5">
+      <div class="chapter-label">Kapitel 5</div>
+      <h1>Das Display</h1>
+    </div>
+    <p class="lead">Bereiche des Bildschirms, Warnsymbole, Fahrtwerte und Menü.</p>
+    <div class="cols c7-5">
+      <figure id="abb-anatomie">
+        {{svg:anatomie}}
+        <figcaption><span class="fn">{{fig:abb-anatomie}}</span>Display im Parkmodus, dunkles Design. Bildschirmfoto mit Beispieldaten. Welche Symbole du siehst, hängt von Ausstattung und Einstellungen ab.</figcaption>
+      </figure>
+      <ol class="legend one" style="margin-top:0">
+        <li><span class="num">1</span><span>Akkus<span class="sub">Ladestand je Akku, wahlweise als Reichweite. Daneben Stützbatterien {{icon:cbb}} {{icon:aux}} oder offene Sitzbank {{icon:seat-open}}.</span></span></li>
+        <li><span class="num">2</span><span>Uhrzeit<span class="sub">kann per GPS gestellt werden, auch ohne SIM</span></span></li>
+        <li><span class="num">3</span><span>Verbindungen und Sensoren<span class="sub">etwa Temperatur, Update, GPS, Bluetooth, Cloud, Mobilfunk</span></span></li>
+        <li><span class="num">4</span><span>Tachometer<span class="sub">Geschwindigkeit in km/h</span></span></li>
+        <li><span class="num">5</span><span>Energie-Anzeige<span class="sub">Leistung in kW</span></span></li>
+        <li><span class="num">6</span><span>Warnsymbole<span class="sub">{{p:warn}}</span></span></li>
+        <li><span class="num">7</span><span>Fahrtwerte<span class="sub">{{p:fahrtwerte}}</span></span></li>
+      </ol>
+    </div>
+    <p style="margin-top:3mm">Viele Symbole oben rechts erscheinen nur bei Bedarf, etwa {{icon:cold}} bei Kälte. Was dauerhaft sichtbar bleibt, stellst du unter [[Menü > Einstellungen > Darstellung > Statusleiste]] ein.</p>
+    <h2>Hell, dunkel oder automatisch</h2>
+    <p>Unter [[Menü > Einstellungen > Darstellung > Design]] wählst du Hell, Dunkel oder Automatisch nach Umgebungslicht. Die Helligkeit stellst du dort getrennt ein.</p>
+    <h2>Hinweise am oberen Rand</h2>
+    <p>Farbige Hinweise oben am Display verschwinden meist von selbst. Hinweise zu einer gestörten Verbindung bleiben, bis das Problem behoben ist.</p>
+    <table class="toast">
+      <tbody>
+        <tr><td><span class="led r"></span> Rot</td><td class="plain">Fehler oder kritische Warnung</td><td><span class="led" style="background:#e8862a"></span> Orange</td><td class="plain">Warnung</td></tr>
+        <tr><td><span class="led g"></span> Grün</td><td class="plain">Erfolg</td><td><span class="led" style="background:#2f73c9"></span> Blau</td><td class="plain">Information</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- Seite 11: Warnsymbole, Fahrtwerte, Menü -->
+<section class="page" data-folio="5 Das Display">
+  <div class="body">
+    <div class="cont-head">Kapitel 5 &nbsp;Das Display</div>
+    <h2 class="first" id="warn">Warnsymbole</h2>
+    <div class="cols c4-8">
+      <figure id="abb-warn">
+        {{svg:warnblinker}}
+        <figcaption><span class="fn">{{fig:abb-warn}}</span>Warnblinker an, Roller im Parkmodus. Beispieldaten.</figcaption>
+      </figure>
+      <table class="symbol-table">
+        <thead><tr><th style="width:38%">Symbol</th><th>Bedeutung</th></tr></thead>
+        <tbody>
+          <tr><td>{{icon:parking}} rot</td><td class="plain">Parkmodus, Feststellbremse aktiv</td></tr>
+          <tr><td>{{icon:hazards}} blinkt</td><td class="plain">Warnblinker an</td></tr>
+          <tr><td>{{icon:engine}} gelb</td><td class="plain">Fehler an Motor oder Motorsteuerung oder Verbindung zwischen den Rechnern gestört</td></tr>
+          <tr><td>{{icon:turtle}} orange</td><td class="plain">Akku bei 20 % oder weniger, Leistung gedrosselt</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="small" style="margin-top:1.5mm">Warnsymbole stehen unten links, die Blinker {{icon:turn-left}} {{icon:turn-right}} oben.</p>
+    <h2 id="fahrtwerte">Fahrtwerte in der untersten Zeile</h2>
+    <table>
+      <tbody>
+        <tr><td style="width:22%"><span class="disp">DAUER</span></td><td class="plain">Zeit in Fahrbereitschaft, sekündlich aktualisiert</td></tr>
+        <tr><td><span class="disp">Ø TEMPO</span></td><td class="plain">Durchschnitt, sekündlich aktualisiert</td></tr>
+        <tr><td><span class="disp">STRECKE</span></td><td class="plain">Tageskilometer</td></tr>
+        <tr><td><span class="disp">GESAMT</span></td><td class="plain">Gesamtkilometer des Rollers, nicht rücksetzbar</td></tr>
+      </tbody>
+    </table>
+    <p style="margin-top:2mm">Die ersten drei Werte überstehen einen Neustart. Wann sie auf null gehen, legst du unter [[Menü > Einstellungen > Fahrzeug > Fahrtenzähler]] fest: nach jeder Fahrt, täglich, beim Akkuwechsel oder nur von Hand. Das Fahrtenbuch zählt davon unabhängig ({{p:ausblick}}).</p>
+    <h2 id="menue">Das Menü bedienen</h2>
+    <p>Du bedienst das Menü mit beiden Bremshebeln. Die Hinweise am unteren Bildschirmrand zeigen, was gerade geht.</p>
+    <table>
+      <thead><tr><th style="width:38%">Geste</th><th>Wirkung</th></tr></thead>
+      <tbody>
+        <tr><td>links zweimal kurz</td><td class="plain">Menü öffnen, nur im Parkmodus</td></tr>
+        <tr><td>links kurz</td><td class="plain">zum nächsten Eintrag</td></tr>
+        <tr><td>links halten</td><td class="plain">zurück, nach 3 s Menü schließen</td></tr>
+        <tr><td>rechts kurz</td><td class="plain">auswählen oder bestätigen</td></tr>
+        <tr><td>rechts halten</td><td class="plain">Aktion der Zeile, falls angeboten</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- Seite 12: Ausblick -->
+<section class="page" data-folio="Ausblick">
+  <div class="body">
+    <div class="chapter-head" id="ausblick">
+      <div class="chapter-label">Ausblick</div>
+      <h1>Kapitel 6 bis 10</h1>
+    </div>
+    <p class="lead">Für die tägliche Fahrt reichen die Kapitel 1 bis 5. Die weiteren Kapitel erklären Schlüssel, Akkus, Navigation, Verbindungen und Hilfe.</p>
+    <div class="cols c2 shots2">
+      <figure id="abb-route">
+        <img class="shot" src="assets/img/librescoot-1-4-route-de.png" alt="Routenübersicht mit drei Zwischenstopps in Berlin">
+        <figcaption><span class="fn">{{fig:abb-route}}</span>Routenübersicht mit drei Stopps, Beispieldaten. Kartendaten © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap-Mitwirkende</a></figcaption>
+      </figure>
+      <figure id="abb-trip">
+        <img class="shot" src="assets/img/fahrtenbuch-1.4.3-de.png" alt="Fahrtdetails mit Strecke, Fahrzeit, Durchschnitt und GPS-Spur">
+        <figcaption><span class="fn">{{fig:abb-trip}}</span>Fahrtenbuch mit simulierten Beispieldaten. Kartendaten © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap-Mitwirkende</a></figcaption>
+      </figure>
+    </div>
+    <div class="outlook-sec">
+      <h3><span class="k">6</span> Schlüssel: Karten und Android-Handy</h3>
+      <p>Karten und Android-NFC-Schlüssel anlernen und entfernen. Hinweise zu geeigneten App-Builds.</p>
+      <h3><span class="k">7</span> Akkus, Laden und Winterschlaf</h3>
+      <p>Akkus tauschen und laden, Stützbatterien, Doppelakku-Betrieb nach Umrüstung, Winterschlaf mit Aufwachzeit oder Zeitplan.</p>
+      <h3><span class="k">8</span> Navigation und Fahrtenbuch</h3>
+      <p>Offline-Karten, Routen mit mehreren Stopps und Fortsetzen nach einer Pause. Das Fahrtenbuch speichert abgeschlossene Fahrten ab 100 m, getrennt vom Tageskilometerzähler.</p>
+      <h3><span class="k">9</span> Verbindungen und Updates</h3>
+      <p>Updates mit passender App per Bluetooth, per USB-Updatemodus und Web-Oberfläche. Für USB schraubst du die Fußraumabdeckung ab und schließt einen Computer an, der Roller bleibt dabei entsperrt. Die neue Version wird nach dem Neustart aktiv. Mobilfunk und Cloud sind optional.</p>
+      <h3><span class="k">10</span> Hilfe bei Störungen</h3>
+      <p>Fehlercodes, Fehlerspeicher, Doctor-Systemprüfung und Notstart. Hilfe gibt es im Discord, Fehler meldest du auf GitHub.</p>
+    </div>
+  </div>
+</section>
+
+<pre id="check-result" hidden></pre>
+<script>
+(function () {
+  if (location.hash !== "#check") return;
+  function run() {
+    var res = { pages: [] };
+    document.querySelectorAll(".page").forEach(function (pg) {
+      var body = pg.querySelector(".body"), b = body.getBoundingClientRect();
+      var issues = [], maxBottom = b.top;
+      body.querySelectorAll("*").forEach(function (el) {
+        if (el.closest("svg") && el.tagName.toLowerCase() !== "svg") return;
+        var r = el.getBoundingClientRect();
+        if (!r.width && !r.height) return;
+        maxBottom = Math.max(maxBottom, r.bottom);
+        if (r.bottom > b.bottom + 0.5 || r.right > b.right + 0.5 || r.left < b.left - 0.5 || r.top < b.top - 0.5)
+          issues.push(el.tagName + "." + el.className + " " + (el.textContent || "").trim().slice(0, 40));
+        var cs = getComputedStyle(el);
+        if (el.scrollWidth > el.clientWidth + 1 && cs.overflowX !== "visible" && el.tagName !== "svg")
+          issues.push("scroll-x " + el.tagName + "." + el.className);
+      });
+      var folio = pg.querySelector(".folio");
+      if (folio && folio.getBoundingClientRect().top < b.bottom) issues.push("folio überlappt Satzspiegel");
+      res.pages.push({ page: pg.dataset.page, issues: issues, todos: pg.querySelectorAll(".todo").length,
+        fill: Math.round((maxBottom - b.top) / (b.bottom - b.top) * 100) });
+    });
+    var pre = document.getElementById("check-result");
+    pre.textContent = JSON.stringify(res);
+  }
+  (document.fonts ? document.fonts.ready : Promise.resolve()).then(function () { setTimeout(run, 300); });
+})();
+</script>
+</body>
+</html>
