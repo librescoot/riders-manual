@@ -36,7 +36,12 @@ jobs:
 
       - name: Build and verify PDFs for all languages
         run: |
-          python3 source/build.py --lang all --strict --no-previews --out-dir dist
+          VER_FLAG=""
+          if [[ "${GITHUB_REF}" == refs/tags/* ]]; then
+            VER="${GITHUB_REF_NAME#v}"
+            VER_FLAG="--version ${VER}"
+          fi
+          python3 source/build.py --lang all --strict --no-previews --out-dir dist ${VER_FLAG}
           (cd dist && sha256sum *.pdf > SHA256SUMS.txt && sha256sum -c SHA256SUMS.txt)
           ls -lh dist/
 

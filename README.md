@@ -32,7 +32,7 @@ Requirements:
 Build all languages and run strict checks:
 
 ```sh
-python3 source/build.py --lang all --strict
+python3 source/build.py --lang all --strict --version 1.4.3
 ```
 
 Build a single language or target:

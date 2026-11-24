@@ -295,7 +295,7 @@ def discover_languages():
     return langs
 
 
-def build_one(lang, target, out_dir, chrome, previews=True, strict=False):
+def build_one(lang, target, out_dir, chrome, previews=True, strict=False, version=None):
     lang_dir = SRC / lang
     cfg = json.loads((lang_dir / "lang.json").read_text(encoding="utf-8"))
     src = load_source(lang_dir, cfg, target)
@@ -320,7 +320,12 @@ def build_one(lang, target, out_dir, chrome, previews=True, strict=False):
 
     doc, npages, fignum, missing, leftovers = build_html(src, lang_dir, cfg)
     html_name = f"{lang}-{target}.html"
-    pdf_name = cfg["pdf_name"] if target == "full" else cfg["sample_pdf_name"]
+    base_pdf_name = cfg["pdf_name"] if target == "full" else cfg["sample_pdf_name"]
+    if version:
+        stem, ext = os.path.splitext(base_pdf_name)
+        pdf_name = f"{stem}-{version}{ext}"
+    else:
+        pdf_name = base_pdf_name
     html_file = html_dir / html_name
     html_file.write_text(doc, encoding="utf-8")
     forb, words = text_checks(doc)
@@ -414,6 +419,7 @@ def main():
     parser.add_argument("--out-dir", default="dist", help="Output directory relative to repo root")
     parser.add_argument("--no-previews", action="store_true", help="Skip PNG preview rendering")
     parser.add_argument("--strict", action="store_true", help="Fail on any layout, ref, text or font issue")
+    parser.add_argument("--version", default=None, help="Optional version suffix for output PDF filenames (e.g. 1.4.3)")
     args = parser.parse_args()
 
     target_map = {"gesamt": ["full"], "full": ["full"], "muster": ["sample"], "sample": ["sample"], "all": ["full", "sample"]}
@@ -428,7 +434,7 @@ def main():
 
     for lang in langs:
         for t in targets:
-            build_one(lang, t, out_dir, chrome, previews=not args.no_previews, strict=args.strict)
+            build_one(lang, t, out_dir, chrome, previews=not args.no_previews, strict=args.strict, version=args.version)
 
 
 if __name__ == "__main__":
